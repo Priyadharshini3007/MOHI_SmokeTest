@@ -33,6 +33,12 @@ public class DriverUtils {
     public void closeApplication()
     {
       driver.quit();
+      
+    }
+    
+    public void Close()
+    {
+    driver.close();
     }
     
 }
