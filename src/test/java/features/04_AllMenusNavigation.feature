@@ -28,12 +28,9 @@ Scenario: Verification of User menu navigation
 	And click Master Detail Entry sub menu 
 	When Select Admin menu 
 	And click Notification Entry sub menu 
-	
-@SmokeTestNavi 
-@menunavigation 
-Scenario: Log out the user 
 	And log out 
-	And close window 
+	And close window
+ 
 	
 @SmokeTestNavi 
 @menunavigation 
@@ -49,10 +46,6 @@ Scenario: To verify Book & Leave Menu navigations
 	And click My Dashboard sub menu 
 	When Select Leave menu 
 	And click Holidays sub menu 
-	
-@SmokeTestNavi 
-@menunavigation 
-Scenario: Log out the user 
 	And log out 
 	And close window 
 	
@@ -71,10 +64,6 @@ Scenario: To verify center menu navigations
 	And click Annual Photo Schedule sub menu 
 	When Select center menu 
 	And click Family Social Worker Assignment sub menu 
-	
-@SmokeTestNavi 
-@menunavigation 
-Scenario: Log out the user 
 	And log out 
 	And close window 
 	
@@ -94,10 +83,6 @@ Scenario: To verify exam menu navigations
 	And click Invigilation Entry sub menu 
 	When Select exam menu 
 	And click Subject Grading Entry sub menu 
-	
-@SmokeTestNavi 
-@menunavigation 
-Scenario: Log out the user 
 	And log out 
 	And close window 
 	
@@ -118,11 +103,7 @@ Scenario: To verify employee menu navigations
 	When Select employee menu 
 	And click staff promotion report sub menu 
 	When Select employee menu 
-	And Click Employee Leave Report submenu 
-	
-@SmokeTestNavi 
-@menunavigation 
-Scenario: Log out the user 
+	And Click Employee Leave Report submenu  
 	And log out 
 	And close window 
 	
@@ -146,10 +127,6 @@ Scenario: To verify FAST Menu navigations
 	And click Assessment Chart sub menu 
 	When Select FAST menu 
 	And click Fast Activity Report sub menu 
-	
-@SmokeTestNavi 
-@menunavigation 
-Scenario: Log out the user 
 	And log out 
 	And close window 
 	
@@ -297,10 +274,6 @@ Scenario: To verify payroll menu navigations
 	And Click Net Pay & Gross Pay Report submenu 
 	When Select Payroll menu 
 	And Click Summary Report by Designation submenu 
-	
-@SmokeTestNavi 
-@menunavigation 
-Scenario: Log out the user 
 	And log out 
 	And close window 
 	
@@ -401,10 +374,6 @@ Scenario: To verify procurement menu navigations
 	And Click LPO Payment Report submenu 
 	When Select procurement menu 
 	And Click LPO Requisition Summary Report submenu 
-	
-@SmokeTestNavi 
-@menunavigation 
-Scenario: Log out the user 
 	And log out 
 	And close window 
 	
@@ -420,10 +389,6 @@ Scenario: To verify Promotion Menu navigations
 	And click In-SchoolPromotion sub menu 
 	When Select Promotion menu 
 	And click Transfer & Promotional Transfer sub menu 
-	
-@SmokeTestNavi 
-@menunavigation 
-Scenario: Log out the user 
 	And log out 
 	And close window 
 	
@@ -446,10 +411,6 @@ Scenario: To verify Sponsorship Menu navigations
 	And Click Dashboard submenu 
 	When Select Sponsorship menu 
 	And Click Sponsor List submenu 
-	
-@SmokeTestNavi 
-@menunavigation 
-Scenario: Log out the user 
 	And log out 
 	And close window 
 	
@@ -467,10 +428,6 @@ Scenario: To verify Staff Profile Menu navigations
 	And click Pay Structure Details sub menu 
 	When Select Staff Profile menu 
 	And click Pay Slip Details sub menu 
-	
-@SmokeTestNavi 
-@menunavigation 
-Scenario: Log out the user 
 	And log out 
 	And close window 
 	
@@ -512,10 +469,6 @@ Scenario: To verify student menu navigations
 	And click Fee Master Entry submenu 
 	When Select student menu 
 	And click Academic Term Entry submenu 
-	
-@SmokeTestNavi 
-@menunavigation 
-Scenario: Log out the user 
 	And log out 
 	And close window 
 	
@@ -564,11 +517,7 @@ Scenario: To verify Reports menu navigations
 	When Select Reports menu 
 	And Click Message status report submenu 
 	When Select Reports menu 
-	And Click Message conversation Report submenu 
-	
-@SmokeTestNavi 
-@menunavigation 
-Scenario: Log out the user 
+	And Click Message conversation Report submenu  
 	And log out 
 	And close window 
 	
