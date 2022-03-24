@@ -1107,4 +1107,19 @@ public class AllMenuNavigationSteps extends BaseClass{
 		menunavigation.MessageconversationReportsubmenu();
 	}
 	
+	@When("^close window$")
+	public void close_window()  {
+	  
+		Close();
+		
+	}
+	
+	
+	@Given("^initiate web browser$")
+	public void initiate_web_browser() throws Throwable {
+	   
+		initDriver();
+	}
+	
+	
 }
