@@ -30,7 +30,6 @@ Scenario: Verification of User menu navigation
 	And click Notification Entry sub menu 
 	And log out 
 	And close window
-	
  
 	
 @SmokeTestNavi 
