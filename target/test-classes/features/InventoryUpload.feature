@@ -4,6 +4,7 @@ Feature: To verify Inventory Upload process
 @InventoryUpload
 @InventoryDownloadTemplate
  Scenario: Verification of Download Template for Inventory Upload process
+ And initiate web browser 
     And Enter username as "daniel.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -27,3 +28,4 @@ Feature: To verify Inventory Upload process
 @InventoryUpload
 Scenario: Log out the user
  And log out 
+ And close window 

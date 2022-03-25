@@ -1,7 +1,8 @@
 Feature: To Verify Promotion Report 
-@Reports
-@PromotionReprt
-Scenario: This is promotion report scenario
+@Reports 
+@PromotionReprt 
+Scenario: This is promotion report scenario 
+	And initiate web browser 
 	Given user is on login page 
 	And Enter username "CSCUsername" And click submit 
 	And Enter security answer And click submit 
@@ -12,7 +13,8 @@ Scenario: This is promotion report scenario
 	And select the school 
 	And select the class 
 	And select view report 
-@Reports	
-@logout
-Scenario: Log out the user
- And log out
+@Reports 
+@logout 
+Scenario: Log out the user 
+	And log out 
+	And close window

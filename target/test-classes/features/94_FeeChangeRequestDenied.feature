@@ -1,6 +1,7 @@
 Feature: This is the Fee Change Request Denied feature 
 @FeeChangeRequestDeniedFeature
 Scenario: This is Fee Change Request Denied Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "Socialworker" And click submit 
 	And Enter security answer And click submit 
@@ -8,6 +9,8 @@ Given user is on login page
 	And click Change Fee Structure Link in My Functions
 	And Enter the student name to change the  fee structure
 	And Enter the propose new fee structure details and click submit for approval button and logout
+	And close window
+	And initiate web browser
 	And Enter username "HeadTeacher" And click submit 
 	And Enter security answer And click submit 
 	And Enter password And click submit
@@ -19,3 +22,4 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window

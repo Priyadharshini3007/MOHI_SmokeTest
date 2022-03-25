@@ -4,9 +4,10 @@ Feature: To verify Inventory Tracking process
 @InventoryTracking
 @AddInventoryTracking
  Scenario: Verification of Add Inventory Tracking process
- 	And Enter username as "daniel.mwangi@mohiafrica.org" And click submit 
-	And Enter security answer as "k" And click submit 
-	And Enter password as "Password#123" And click submit
+ And initiate web browser
+ 	 And Enter username as "daniel.mwangi@mohiafrica.org" And click submit 
+	 And Enter security answer as "k" And click submit 
+	 And Enter password as "Password#123" And click submit
 	 When Select procurement menu
 	 And Click Inventory Tracking submenu
 	 Then Select the Center/Department as "      JOSKA"
@@ -30,9 +31,10 @@ Feature: To verify Inventory Tracking process
  @InventoryTracking
  @EditInventoryTracking
  Scenario: Verification of Edit Inventory Tracking process
-  	And Enter username as "daniel.mwangi@mohiafrica.org" And click submit 
-	And Enter security answer as "k" And click submit 
-	And Enter password as "Password#123" And click submit
+ And initiate web browser
+    And Enter username as "daniel.mwangi@mohiafrica.org" And click submit 
+	 And Enter security answer as "k" And click submit 
+	 And Enter password as "Password#123" And click submit
 	 When Select procurement menu
 	 And Click Inventory Tracking submenu
 	 Then Select the Center/Department as "      JOSKA"
@@ -51,3 +53,4 @@ Feature: To verify Inventory Tracking process
 @InventoryTracking
 Scenario: Log out the user
  And log out
+ And close window

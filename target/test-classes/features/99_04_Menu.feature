@@ -2,6 +2,7 @@ Feature: This is the Admin Menu feature
  
 @AddNewMenu
 Scenario: This is Add New Menu Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -19,11 +20,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 @AddNewMenu
 @EditExistingMenu
 Scenario: This is Edit Existing  Menu Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -38,10 +40,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window
 
 @AddNewMenu
 @AdminMenuReturnToList
 Scenario: This is to verify AdminMenu Return to List Button Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -54,9 +58,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window
+
 @AddNewMenu
 @MenuInactive
 Scenario: This is to verify menu become inactive Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -69,10 +76,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window
 
 @AddNewMenu
 @ApplicationFieldDefaultedToSiteAdmin
 Scenario: This is to verify Application field is defaulted to SiteAdmin Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -86,9 +95,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window
+
 @AddNewMenu
 @InactiveElementNotDisplayedinSite
 Scenario: This is to verify Inactive Element not Displayed in The site Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -102,4 +114,4 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window

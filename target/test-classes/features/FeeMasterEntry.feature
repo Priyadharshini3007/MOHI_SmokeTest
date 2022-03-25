@@ -2,6 +2,7 @@ Feature: To verify FeeMasterEntry Functionalities
 @FeeFrequencyValidation
 @AddNewOneTimeFee
 Scenario: To verify Add New Fee with one time Fee Frequency Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -12,15 +13,16 @@ Scenario: To verify Add New Fee with one time Fee Frequency Functionality
 	And Select Editable 
 	And Click Add Button to add New Fee
 	And Verify that the New Added Fee Type get reflected in Fee Type Dropdown
-@FeeFrequencyValidation
-@AddNewOneTimeFee
-@logout
-Scenario: Log out the user
-And log out
- 
+@FeeFrequencyValidation 
+@AddNewOneTimeFee 
+@logout 
+Scenario: Log out the user 
+	And log out 
+	And close window 
 @FeeFrequencyValidation
 @FeeTypeAssignment
 Scenario: To verify one time Fee Frequency Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -41,10 +43,11 @@ Scenario: To verify one time Fee Frequency Functionality
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @FeeFrequencyValidation
 @RecruitmentFormOneTimeFee
 Scenario: To verify newly added one time fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -56,6 +59,8 @@ Scenario: To verify newly added one time fee frequency got reflected in recruitm
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -64,6 +69,8 @@ Scenario: To verify newly added one time fee frequency got reflected in recruitm
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify new fee type get reflected or not
 	When headteacher should navigate to feeinfo page and verify the newly added fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -71,6 +78,8 @@ Scenario: To verify newly added one time fee frequency got reflected in recruitm
 	When headteacher enter the student name to verify new fee type get reflected or not 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -78,6 +87,8 @@ Scenario: To verify newly added one time fee frequency got reflected in recruitm
 	When headteacher enter the student name to verify new fee type get reflected or not 
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -89,11 +100,12 @@ Scenario: To verify newly added one time fee frequency got reflected in recruitm
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 #----------------------------Yearly Fee Frequency------------------------------------#
 @FeeFrequencyValidation
 @AddNewYearlyFee
 Scenario: To verify Add New Fee with Yearly fee frequency Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -109,10 +121,11 @@ Scenario: To verify Add New Fee with Yearly fee frequency Functionality
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @FeeFrequencyValidation
 @YearlyFeeTypeAssignment
 Scenario: To verify Yearly Fee Frequency Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -133,10 +146,11 @@ Scenario: To verify Yearly Fee Frequency Functionality
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @FeeFrequencyValidation
 @RecruitmentFormYearlyFee
 Scenario: To verify newly added Yearly fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -148,6 +162,8 @@ Scenario: To verify newly added Yearly fee frequency got reflected in recruitmen
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -156,6 +172,8 @@ Scenario: To verify newly added Yearly fee frequency got reflected in recruitmen
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify new yearly fee type get reflected or not
 	When headteacher should navigate to feeinfo page and verify the newly added yearly frequency fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -163,6 +181,8 @@ Scenario: To verify newly added Yearly fee frequency got reflected in recruitmen
 	When headteacher enter the student name to verify new Yearly fee type get reflected or not 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -170,6 +190,8 @@ Scenario: To verify newly added Yearly fee frequency got reflected in recruitmen
 	When headteacher enter the student name to verify new Yearly fee type get reflected or not 
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -182,11 +204,12 @@ Scenario: To verify newly added Yearly fee frequency got reflected in recruitmen
 @logout
 Scenario: Log out the user
 And log out 
-
+And close window
 #-----------------------------------Monthly Fee Frequency-----------------------------#
 @FeeFrequencyValidation
 @AddNewMonthlyFee
 Scenario: To verify Add New Fee with Monthly fee frequency Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -202,10 +225,11 @@ Scenario: To verify Add New Fee with Monthly fee frequency Functionality
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 @FeeFrequencyValidation
 @MonthlyFeeTypeAssignment
 Scenario: To verify Monthly Fee Frequency Assignment Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -226,10 +250,11 @@ Scenario: To verify Monthly Fee Frequency Assignment Functionality
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @FeeFrequencyValidation
 @RecruitmentFormMonthlyFee
 Scenario: To verify newly added Monthly fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -241,6 +266,8 @@ Scenario: To verify newly added Monthly fee frequency got reflected in recruitme
 	And Enter the sibling details
 	And Enter the Family member Info and other details
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -249,6 +276,8 @@ Scenario: To verify newly added Monthly fee frequency got reflected in recruitme
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify new monthly fee type get reflected or not
 	When headteacher should navigate to feeinfo page and verify the newly added monthly frequency fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -256,6 +285,8 @@ Scenario: To verify newly added Monthly fee frequency got reflected in recruitme
 	When headteacher enter the student name to verify new monthly fee type get reflected or not 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -263,6 +294,8 @@ Scenario: To verify newly added Monthly fee frequency got reflected in recruitme
 	When headteacher enter the student name to verify new monthly fee type get reflected or not 
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -272,6 +305,8 @@ Scenario: To verify newly added Monthly fee frequency got reflected in recruitme
 	When Click on the student AdmissionFee Deposit icon 
 	When Click on save button to do the AdmissionFeeDeposit 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -279,6 +314,8 @@ Scenario: To verify newly added Monthly fee frequency got reflected in recruitme
 	When enter the student name to update the photo schedule and click camera icon to verify Monthly fee
 	When enter the date and save
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -287,6 +324,8 @@ Scenario: To verify newly added Monthly fee frequency got reflected in recruitme
 	When click on upload CMF photo 
 	When Click on the choose file and upload button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -298,11 +337,12 @@ Scenario: To verify newly added Monthly fee frequency got reflected in recruitme
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 #------------------------------------------Fee Frequency -Termly-------------------------------#
 @FeeFrequencyValidation
 @AddNewTermlyFee
 Scenario: To verify Add New Fee with Termly fee frequency Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -318,10 +358,11 @@ Scenario: To verify Add New Fee with Termly fee frequency Functionality
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @FeeFrequencyValidation
 @TermlyFeeTypeAssignment
 Scenario: To verify Termly Fee Frequency Assignment Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -342,10 +383,11 @@ Scenario: To verify Termly Fee Frequency Assignment Functionality
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 @FeeFrequencyValidation
 @RecruitmentFormTermFee
 Scenario: To verify newly added Termly fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -357,6 +399,8 @@ Scenario: To verify newly added Termly fee frequency got reflected in recruitmen
 	And Enter the sibling details
 	And Enter the Family member Info and other details
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -365,6 +409,8 @@ Scenario: To verify newly added Termly fee frequency got reflected in recruitmen
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify new Termly fee type get reflected or not
 	When headteacher should navigate to feeinfo page and verify the newly added Termly frequency fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -372,6 +418,8 @@ Scenario: To verify newly added Termly fee frequency got reflected in recruitmen
 	When headteacher enter the student name to verify new Termly fee type get reflected or not 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -379,6 +427,8 @@ Scenario: To verify newly added Termly fee frequency got reflected in recruitmen
 	When headteacher enter the student name to verify new Termly fee type get reflected or not 
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -388,6 +438,8 @@ Scenario: To verify newly added Termly fee frequency got reflected in recruitmen
 	When Click on the student AdmissionFee Deposit icon 
 	When Click on save button to do the AdmissionFeeDeposit 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -395,6 +447,8 @@ Scenario: To verify newly added Termly fee frequency got reflected in recruitmen
 	When enter the student name to update the photo schedule and click camera icon to verify Termly fee
 	When enter the date and save
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -403,6 +457,8 @@ Scenario: To verify newly added Termly fee frequency got reflected in recruitmen
 	When click on upload CMF photo 
 	When Click on the choose file and upload button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -415,12 +471,13 @@ Scenario: To verify newly added Termly fee frequency got reflected in recruitmen
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 #-----------------------------Per family with one time Fee Frequency-------------------------------#
 
 @PerFamily
 @AddNewPerFamilyOneTimeFeeType
 Scenario: To verify Add new Per Family Fee Type 
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -437,10 +494,11 @@ Scenario: To verify Add new Per Family Fee Type
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @PerFamily
 @PerFamilyOneTimeFeeTypeAssignment
 Scenario: To verify Per Family Type Assignment with One Time Fee Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -462,10 +520,11 @@ Scenario: To verify Per Family Type Assignment with One Time Fee Functionality
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 @PerFamily
 @PerFamilyOneTimeFeePreRequiste
 Scenario: Pre Requiste student recruitment to verify PerFamily Fee Type with one time frequency
+And initiate web browser
 And Enter username as "josk.sw1@mohiafrica.org" And click submit
 And Enter security answer as "k" And click submit
 And Enter password as "Password#123" And click submit
@@ -477,6 +536,8 @@ And Enter the Student details
 And Enter the sibling details
 And Enter the Family member Info and other details
 And log out
+And close window
+And initiate web browser
 And Enter username as "josk.ht@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -485,6 +546,8 @@ When headteacher enter the student name for Pre requiste and click on approval i
 When headteacher should navigate to schoolinfo page and save the schoolinfo for Pre requiste
 When headteacher should navigate to feeinfo page and verify the newly added per Family One Time frequency fee got reflected
 And log out
+And close window
+And initiate web browser
 And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -492,6 +555,8 @@ When CSC click on the approval link in the myalerts tab
 When headteacher enter the student name for Pre requiste and click on approval icon
 When CSC should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -499,6 +564,8 @@ When CSM click on the approval link in the myalerts tab
 When headteacher enter the student name for Pre requiste and click on approval icon
 When CSM should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "fwamacaroline@yahoo.com" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -511,10 +578,11 @@ And Verify the new added Per Familt One Time fee frequency get reflected in fee 
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 @PerFamily
 @PerFamilyOneTimeFee
 Scenario: To verify PerFamily Fee Type with one time frequency
+And initiate web browser
 And Enter username as "josk.sw1@mohiafrica.org" And click submit
 And Enter security answer as "k" And click submit
 And Enter password as "Password#123" And click submit
@@ -526,6 +594,8 @@ And Enter the Student details
 And Enter the sibling details to verify PerFamily Fee Type 
 And Enter the Family member Info and other details to verify PerFamily Fee Type
 And log out
+And close window
+And initiate web browser
 And Enter username as "josk.ht@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -534,6 +604,8 @@ When headteacher enter the student name to verify PerFamily Fee Type with one ti
 When headteacher should navigate to schoolinfo page and save the schoolinfo to verify PerFamily Fee Type with one time frequency
 When headteacher should navigate to feeinfo page and verify the newly added per Family One Time frequency not got reflected
 And log out
+And close window
+And initiate web browser
 And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -541,6 +613,8 @@ When CSC click on the approval link in the myalerts tab
 When headteacher enter the student name to verify PerFamily Fee Type with one time frequency
 When CSC should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -548,6 +622,8 @@ When CSM click on the approval link in the myalerts tab
 When headteacher enter the student name to verify PerFamily Fee Type with one time frequency
 When CSM should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "fwamacaroline@yahoo.com" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -560,11 +636,12 @@ And Verify the new added Per Family One Time fee frequency not get reflected in 
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 #-----------------------------Per family with Yearly Fee Frequency-------------------------------#
 @PerFamily
 @AddNewPerFamilyYearlyFeeType
 Scenario: To verify Add new Per Family Fee Type with Yearly Frequency
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -580,10 +657,11 @@ Scenario: To verify Add new Per Family Fee Type with Yearly Frequency
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @PerFamily
 @PerFamilyYearlyFeeTypeAssignment
 Scenario: To verify Per Family Type Assignment with Yearly Fee Frequency Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -605,10 +683,11 @@ Scenario: To verify Per Family Type Assignment with Yearly Fee Frequency Functio
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 @PerFamily
 @PerFamilyYearlyFeePreRequiste
 Scenario: Pre Requiste student recruitment to verify PerFamily Fee Type with one time frequency
+And initiate web browser
 And Enter username as "josk.sw1@mohiafrica.org" And click submit
 And Enter security answer as "k" And click submit
 And Enter password as "Password#123" And click submit
@@ -620,6 +699,8 @@ And Enter the Student details
 And Enter the sibling details
 And Enter the Family member Info and other details
 And log out
+And close window
+And initiate web browser
 And Enter username as "josk.ht@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -628,6 +709,8 @@ When headteacher enter the student name for Pre requiste to verify Per Family wi
 When headteacher should navigate to schoolinfo page and save the schoolinfo for Pre requiste to verify Per Family with Yearly Fee Frequency
 When headteacher should navigate to feeinfo page and verify the newly added per Family Yearly frequency fee got reflected
 And log out
+And close window
+And initiate web browser
 And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -635,6 +718,8 @@ When CSC click on the approval link in the myalerts tab
 When headteacher enter the student name for Pre requiste to verify Per Family with Yearly Fee Frequency and click on approval icon
 When CSC should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -642,6 +727,8 @@ When CSM click on the approval link in the myalerts tab
 When headteacher enter the student name for Pre requiste to verify Per Family with Yearly Fee Frequency and click on approval icon
 When CSM should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "fwamacaroline@yahoo.com" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -654,10 +741,11 @@ And Verify the new added Per Family Yearly fee frequency get reflected in fee pa
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @PerFamily
 @PerFamilyYearlyFee
 Scenario: To verify PerFamily Fee Type with Yearly frequency
+And initiate web browser
 And Enter username as "josk.sw1@mohiafrica.org" And click submit
 And Enter security answer as "k" And click submit
 And Enter password as "Password#123" And click submit
@@ -669,6 +757,8 @@ And Enter the Student details
 And Enter the sibling details to verify PerFamily Fee Type 
 And Enter the Family member Info and other details to verify PerFamily Fee Type
 And log out
+And close window
+And initiate web browser
 And Enter username as "josk.ht@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -677,6 +767,8 @@ When headteacher enter the student name to verify PerFamily Fee Type with Yearly
 When headteacher should navigate to schoolinfo page and save the schoolinfo to verify PerFamily Fee Type with Yearly frequency
 When headteacher should navigate to feeinfo page and verify the newly added per Family Yearly frequency not got reflected
 And log out
+And close window
+And initiate web browser
 And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -684,6 +776,8 @@ When CSC click on the approval link in the myalerts tab
 When headteacher enter the student name to verify PerFamily Fee Type with Yearly frequency
 When CSC should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -691,6 +785,7 @@ When CSM click on the approval link in the myalerts tab
 When headteacher enter the student name to verify PerFamily Fee Type with Yearly frequency
 When CSM should navigate to finalpage and click Approve
 And log out
+And initiate web browser
 And Enter username as "fwamacaroline@yahoo.com" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -703,12 +798,13 @@ And Verify the new added Per Family Yearly fee frequency not get reflected in fe
 @logout
 Scenario: Log out the user
 And log out		
-
+And close window
 #-----------------------------Per family with Monthly Fee Frequency-------------------------------#
 
 @PerFamily
 @AddNewPerFamilyMonthlyFeeType
 Scenario: To verify Add new Per Family Fee Type with Monthly Frequency
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -724,10 +820,11 @@ Scenario: To verify Add new Per Family Fee Type with Monthly Frequency
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @PerFamily
 @PerFamilyMonthlyFeeTypeAssignment
 Scenario: To verify Per Family Fee Type with Monthly Fee Frequency Assignment Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -749,10 +846,11 @@ Scenario: To verify Per Family Fee Type with Monthly Fee Frequency Assignment Fu
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @PerFamily
 @PerFamilyMonthlyFeePreRequiste
 Scenario: Pre Requiste student recruitment to verify PerFamily Fee Type with Monthly frequency
+And initiate web browser
 And Enter username as "josk.sw1@mohiafrica.org" And click submit
 And Enter security answer as "k" And click submit
 And Enter password as "Password#123" And click submit
@@ -764,6 +862,8 @@ And Enter the Student details
 And Enter the sibling details
 And Enter the Family member Info and other details
 And log out
+And close window
+And initiate web browser
 And Enter username as "josk.ht@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -772,6 +872,8 @@ When Enter the student name for Pre requiste and click on approval icon to verif
 When headteacher should navigate to schoolinfo page and save the schoolinfo for Pre requiste to verify PerFamily Fee Type with Monthly frequency
 When headteacher should navigate to feeinfo page and verify the newly added per Family Month frequency fee got reflected 
 And log out
+And close window
+And initiate web browser
 And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -779,6 +881,8 @@ When CSC click on the approval link in the myalerts tab
 When Enter the student name for Pre requiste and click on approval icon to verify PerFamily Fee Type with Monthly frequency
 When CSC should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -786,6 +890,8 @@ When CSM click on the approval link in the myalerts tab
 When Enter the student name for Pre requiste and click on approval icon to verify PerFamily Fee Type with Monthly frequency
 When CSM should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "fwamacaroline@yahoo.com" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -795,6 +901,8 @@ And Verify the new added Per Family Monthly fee frequency not get reflected in f
 When Click on the student AdmissionFee Deposit icon 
 When Click on save button to do the AdmissionFeeDeposit 
 And log out
+And close window
+And initiate web browser
 And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit 
@@ -802,6 +910,8 @@ When Click on update photo schedule from my functions
 When enter the student name to update the photo schedule and click camera icon to verify PerFamily Monthly fee for Prerequiste
 When enter the date and save
 And log out
+And close window
+And initiate web browser
 And Enter username as "laceymontour@cmfi.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit 
@@ -810,6 +920,8 @@ When enter the student name to upload photo and click on the view profile icon t
 When click on upload CMF photo 
 When Click on the choose file and upload button
 And log out
+And close window
+And initiate web browser
 And Enter username as "fwamacaroline@yahoo.com" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -822,10 +934,11 @@ And Verify the new added PerFamily Monthly fee frequency get reflected in fee pa
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 @PerFamily
 @PerFamilyMonthlyFee
 Scenario: To verify PerFamily Fee Type with Monthly frequency
+And initiate web browser
 And Enter username as "josk.sw1@mohiafrica.org" And click submit
 And Enter security answer as "k" And click submit
 And Enter password as "Password#123" And click submit
@@ -837,6 +950,8 @@ And Enter the Student details
 And Enter the sibling details to verify PerFamily Fee Type 
 And Enter the Family member Info and other details to verify PerFamily Fee Type
 And log out
+And close window
+And initiate web browser
 And Enter username as "josk.ht@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -845,6 +960,8 @@ When headteacher enter the student name to verify PerFamily Fee Type with Monthl
 When headteacher should navigate to schoolinfo page and save the schoolinfo to verify PerFamily Fee Type with Monthly frequency
 When headteacher should navigate to feeinfo page and verify the newly added per Family Monthly frequency not got reflected
 And log out
+And close window
+And initiate web browser
 And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -852,6 +969,8 @@ When CSC click on the approval link in the myalerts tab
 When headteacher enter the student name to verify PerFamily Fee Type with Monthly frequency
 When CSC should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -859,6 +978,8 @@ When CSM click on the approval link in the myalerts tab
 When headteacher enter the student name to verify PerFamily Fee Type with Monthly frequency
 When CSM should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "fwamacaroline@yahoo.com" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -868,6 +989,8 @@ When Click on the student AdmissionFee Deposit icon
 When Click on save button to do the AdmissionFeeDeposit
 And Verify the new added Per Family Monthly fee frequency not get reflected in fee page as he has sibling
 And log out
+And close window
+And initiate web browser
 And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit 
@@ -875,6 +998,8 @@ When Click on update photo schedule from my functions
 When enter the student name to update the photo schedule and click camera icon to verify PerFamily Monthly fee 
 When enter the date and save
 And log out
+And close window
+And initiate web browser
 And Enter username as "laceymontour@cmfi.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit 
@@ -883,6 +1008,8 @@ When enter the student name to upload photo and click on the view profile icon t
 When click on upload CMF photo 
 When Click on the choose file and upload button
 And log out
+And close window
+And initiate web browser
 And Enter username as "fwamacaroline@yahoo.com" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -894,12 +1021,13 @@ And Verify the new added PerFamily Monthly fee frequency not get reflected in fe
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 
 #-----------------------------Per family with Termly Fee Frequency-------------------------------#
 @PerFamily
 @AddNewPerFamilyTermlyFee
 Scenario: To add new fee to verify Per Family with Termly Fee Frequency Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -916,10 +1044,11 @@ Scenario: To add new fee to verify Per Family with Termly Fee Frequency Function
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @PerFamily
 @PerFamilyTermlyFeeTypeAssignment
 Scenario: To verify Per Family Fee Type with Termly Fee Frequency Assignment Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -942,10 +1071,11 @@ Scenario: To verify Per Family Fee Type with Termly Fee Frequency Assignment Fun
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 @PerFamily
 @PerFamilyTermlyFeePreRequiste
 Scenario: Pre Requiste student recruitment to verify PerFamily Fee Type with Termly frequency
+And initiate web browser
 And Enter username as "josk.sw1@mohiafrica.org" And click submit
 And Enter security answer as "k" And click submit
 And Enter password as "Password#123" And click submit
@@ -957,6 +1087,8 @@ And Enter the Student details
 And Enter the sibling details
 And Enter the Family member Info and other details
 And log out
+And close window
+And initiate web browser
 And Enter username as "josk.ht@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -965,6 +1097,8 @@ When Enter the student name for Pre requiste and click on approval icon to verif
 When headteacher should navigate to schoolinfo page and save the schoolinfo for Pre requiste to verify PerFamily Fee Type with Termly frequency
 When headteacher should navigate to feeinfo page and verify the newly added per Family Termly frequency fee got reflected 
 And log out
+And close window
+And initiate web browser
 And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -972,6 +1106,8 @@ When CSC click on the approval link in the myalerts tab
 When Enter the student name for Pre requiste and click on approval icon to verify PerFamily Fee Type with Termly frequency
 When CSC should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -979,6 +1115,8 @@ When CSM click on the approval link in the myalerts tab
 When Enter the student name for Pre requiste and click on approval icon to verify PerFamily Fee Type with Termly frequency
 When CSM should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "fwamacaroline@yahoo.com" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -988,6 +1126,8 @@ And Verify the new added Per Family Termly fee frequency not get reflected in fe
 When Click on the student AdmissionFee Deposit icon 
 When Click on save button to do the AdmissionFeeDeposit 
 And log out
+And close window
+And initiate web browser
 And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit 
@@ -995,6 +1135,8 @@ When Click on update photo schedule from my functions
 When enter the student name to update the photo schedule and click camera icon to verify PerFamily Termly fee for Prerequiste
 When enter the date and save
 And log out
+And close window
+And initiate web browser
 And Enter username as "laceymontour@cmfi.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit 
@@ -1003,6 +1145,8 @@ When enter the student name to upload photo and click on the view profile icon t
 When click on upload CMF photo 
 When Click on the choose file and upload button
 And log out
+And close window
+And initiate web browser
 And Enter username as "fwamacaroline@yahoo.com" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -1015,10 +1159,11 @@ And Verify the new added PerFamily Termly fee frequency get reflected in fee pag
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 @PerFamily
 @PerFamilyTermlyFee
 Scenario: To verify PerFamily Fee Type with Termly frequency
+And initiate web browser
 And Enter username as "josk.sw1@mohiafrica.org" And click submit
 And Enter security answer as "k" And click submit
 And Enter password as "Password#123" And click submit
@@ -1030,6 +1175,8 @@ And Enter the Student details
 And Enter the sibling details to verify PerFamily Fee Type 
 And Enter the Family member Info and other details to verify PerFamily Fee Type
 And log out
+And close window
+And initiate web browser
 And Enter username as "josk.ht@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -1038,6 +1185,8 @@ When headteacher enter the student name to verify PerFamily Fee Type with Termly
 When headteacher should navigate to schoolinfo page and save the schoolinfo to verify PerFamily Fee Type with Termly frequency
 When headteacher should navigate to feeinfo page and verify the newly added per Family Termly frequency not got reflected
 And log out
+And close window
+And initiate web browser
 And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -1045,6 +1194,8 @@ When CSC click on the approval link in the myalerts tab
 When headteacher enter the student name to verify PerFamily Fee Type with Termly frequency
 When CSC should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -1052,6 +1203,8 @@ When CSM click on the approval link in the myalerts tab
 When headteacher enter the student name to verify PerFamily Fee Type with Termly frequency
 When CSM should navigate to finalpage and click Approve
 And log out
+And close window
+And initiate web browser
 And Enter username as "fwamacaroline@yahoo.com" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -1061,6 +1214,8 @@ When Click on the student AdmissionFee Deposit icon
 When Click on save button to do the AdmissionFeeDeposit
 And Verify the new added Per Family Termly fee frequency not get reflected in fee page as he has sibling
 And log out
+And close window
+And initiate web browser
 And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit 
@@ -1068,6 +1223,8 @@ When Click on update photo schedule from my functions
 When enter the student name to update the photo schedule and click camera icon to verify PerFamily Termly fee 
 When enter the date and save
 And log out
+And close window
+And initiate web browser
 And Enter username as "laceymontour@cmfi.org" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit 
@@ -1076,6 +1233,8 @@ When enter the student name to upload photo and click on the view profile icon t
 When click on upload CMF photo 
 When Click on the choose file and upload button
 And log out
+And close window
+And initiate web browser
 And Enter username as "fwamacaroline@yahoo.com" And click submit 
 And Enter security answer as "k" And click submit 
 And Enter password as "Password#123" And click submit
@@ -1088,12 +1247,13 @@ And Verify the new added PerFamily Termly fee frequency not get reflected in fee
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 #---------------------------------------Gender - OneTimeFee--------------------------------------#
 
 @Gender
 @AddNewGenderOneTimeFee
 Scenario: To add new fee to verify Gender with One Time Fee Frequency Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1110,10 +1270,11 @@ Scenario: To add new fee to verify Gender with One Time Fee Frequency Functional
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @Gender
 @GenderOneTimeFeeAssignment
 Scenario: To verify Gender Fee Type with OneTime Fee Frequency Assignment Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1137,10 +1298,11 @@ Scenario: To verify Gender Fee Type with OneTime Fee Frequency Assignment Functi
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 @Gender
 @MaleStudentOneTimeFeeRecruitment
 Scenario: To verify newly added Male Amount with one time fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1152,6 +1314,8 @@ Scenario: To verify newly added Male Amount with one time fee frequency got refl
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1160,6 +1324,8 @@ Scenario: To verify newly added Male Amount with one time fee frequency got refl
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify Male One Time Fee got reflected
 	When headteacher should navigate to feeinfo page to verify Male One Time Fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1167,6 +1333,8 @@ Scenario: To verify newly added Male Amount with one time fee frequency got refl
 	When headteacher enter the student name to verify Male One Time Fee got reflected 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1174,6 +1342,8 @@ Scenario: To verify newly added Male Amount with one time fee frequency got refl
 	When headteacher enter the student name to verify Male One Time Fee got reflected
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1186,10 +1356,12 @@ Scenario: To verify newly added Male Amount with one time fee frequency got refl
 @logout
 Scenario: Log out the user
 And log out
+And close window
 
 @Gender
 @FemaleStudentOneTimeFeeRecruitment
 Scenario: To verify newly added Female Amount with one time fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1201,6 +1373,8 @@ Scenario: To verify newly added Female Amount with one time fee frequency got re
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1209,6 +1383,8 @@ Scenario: To verify newly added Female Amount with one time fee frequency got re
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify Female One Time Fee got reflected
 	When headteacher should navigate to feeinfo page to verify Female One Time Fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1216,6 +1392,8 @@ Scenario: To verify newly added Female Amount with one time fee frequency got re
 	When headteacher enter the student name to verify Female One Time Fee got reflected 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1223,6 +1401,8 @@ Scenario: To verify newly added Female Amount with one time fee frequency got re
 	When headteacher enter the student name to verify Female One Time Fee got reflected
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1234,12 +1414,13 @@ Scenario: To verify newly added Female Amount with one time fee frequency got re
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 #---------------------------------------Gender - Yearly Fee--------------------------------------#
 
 @Gender
 @AddNewGenderYearlyFee
 Scenario: To verify Add New gender Fee with Yearly fee frequency Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1255,10 +1436,11 @@ Scenario: To verify Add New gender Fee with Yearly fee frequency Functionality
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @Gender
 @GenderYearlyFeeAssignment
 Scenario: To verify Gender Fee Type with Yearly Fee Frequency Assignment Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1281,10 +1463,11 @@ Scenario: To verify Gender Fee Type with Yearly Fee Frequency Assignment Functio
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 @Gender
 @MaleStudentYearlyFeeRecruitment
 Scenario: To verify newly added Male Amount with yearly fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1296,6 +1479,8 @@ Scenario: To verify newly added Male Amount with yearly fee frequency got reflec
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1304,6 +1489,8 @@ Scenario: To verify newly added Male Amount with yearly fee frequency got reflec
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify Male Yearly Fee got reflected
 	When headteacher should navigate to feeinfo page to verify Male Yearly Fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1311,6 +1498,8 @@ Scenario: To verify newly added Male Amount with yearly fee frequency got reflec
 	When headteacher enter the student name to verify Male Yearly Fee got reflected 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1318,6 +1507,8 @@ Scenario: To verify newly added Male Amount with yearly fee frequency got reflec
 	When headteacher enter the student name to verify Male Yearly Fee got reflected
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1330,10 +1521,11 @@ Scenario: To verify newly added Male Amount with yearly fee frequency got reflec
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @Gender
 @FemaleStudentYearlyFeeRecruitment
 Scenario: To verify newly added Female Amount with yearly fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1345,6 +1537,8 @@ Scenario: To verify newly added Female Amount with yearly fee frequency got refl
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1353,6 +1547,8 @@ Scenario: To verify newly added Female Amount with yearly fee frequency got refl
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify Female Yearly Fee got reflected
 	When headteacher should navigate to feeinfo page to verify Female Yearly Fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1360,6 +1556,8 @@ Scenario: To verify newly added Female Amount with yearly fee frequency got refl
 	When headteacher enter the student name to verify Female Yearly Fee got reflected 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1367,6 +1565,8 @@ Scenario: To verify newly added Female Amount with yearly fee frequency got refl
 	When headteacher enter the student name to verify Female Yearly Fee got reflected
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1379,12 +1579,13 @@ Scenario: To verify newly added Female Amount with yearly fee frequency got refl
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 #---------------------------------------Gender - Monthly Fee--------------------------------------#
 
 @Gender
 @AddNewGenderMonthlyFeeType
 Scenario: To verify Add new Gender Fee Type with Monthly Frequency
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1400,10 +1601,11 @@ Scenario: To verify Add new Gender Fee Type with Monthly Frequency
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @Gender
 @GenderMonthlyFeeAssignment
 Scenario: To verify Gender Fee Type with Monthly Fee Frequency Assignment Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1427,10 +1629,11 @@ Scenario: To verify Gender Fee Type with Monthly Fee Frequency Assignment Functi
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 @Gender
 @MaleStudentMonthlyFeeRecruitment
 Scenario: To verify newly added Male Amount with Monthly fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1442,6 +1645,8 @@ Scenario: To verify newly added Male Amount with Monthly fee frequency got refle
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1450,6 +1655,8 @@ Scenario: To verify newly added Male Amount with Monthly fee frequency got refle
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify Male Monthly Fee got reflected
 	When headteacher should navigate to feeinfo page to verify Male Monthly Fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1457,6 +1664,8 @@ Scenario: To verify newly added Male Amount with Monthly fee frequency got refle
 	When headteacher enter the student name to verify Male Monthly Fee got reflected 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1464,6 +1673,8 @@ Scenario: To verify newly added Male Amount with Monthly fee frequency got refle
 	When headteacher enter the student name to verify Male Monthly Fee got reflected
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1473,6 +1684,8 @@ Scenario: To verify newly added Male Amount with Monthly fee frequency got refle
 	When Click on the student AdmissionFee Deposit icon 
     When Click on save button to do the AdmissionFeeDeposit 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -1480,6 +1693,8 @@ Scenario: To verify newly added Male Amount with Monthly fee frequency got refle
 	When enter the student name to update the photo schedule and click camera icon to verify Male Monthly fee for Prerequiste
 	When enter the date and save
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -1488,6 +1703,8 @@ Scenario: To verify newly added Male Amount with Monthly fee frequency got refle
 	When click on upload CMF photo 
 	When Click on the choose file and upload button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1500,10 +1717,11 @@ Scenario: To verify newly added Male Amount with Monthly fee frequency got refle
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @Gender
 @FemaleStudentMonthlyFeeRecruitment
 Scenario: To verify newly added Female Amount with Monthly fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1515,6 +1733,8 @@ Scenario: To verify newly added Female Amount with Monthly fee frequency got ref
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1523,6 +1743,8 @@ Scenario: To verify newly added Female Amount with Monthly fee frequency got ref
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify Female Monthly Fee got reflected
 	When headteacher should navigate to feeinfo page to verify Female Monthly Fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1530,6 +1752,8 @@ Scenario: To verify newly added Female Amount with Monthly fee frequency got ref
 	When headteacher enter the student name to verify Female Monthly Fee got reflected 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1537,6 +1761,8 @@ Scenario: To verify newly added Female Amount with Monthly fee frequency got ref
 	When headteacher enter the student name to verify Female Monthly Fee got reflected
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1546,6 +1772,8 @@ Scenario: To verify newly added Female Amount with Monthly fee frequency got ref
 	When Click on the student AdmissionFee Deposit icon 
     When Click on save button to do the AdmissionFeeDeposit 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -1553,6 +1781,8 @@ Scenario: To verify newly added Female Amount with Monthly fee frequency got ref
 	When enter the student name to update the photo schedule and click camera icon to verify Female Monthly fee for Prerequiste
 	When enter the date and save
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -1561,6 +1791,8 @@ Scenario: To verify newly added Female Amount with Monthly fee frequency got ref
 	When click on upload CMF photo 
 	When Click on the choose file and upload button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1573,11 +1805,12 @@ Scenario: To verify newly added Female Amount with Monthly fee frequency got ref
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 #---------------------------------------Gender - Termly Fee--------------------------------------#
 @Gender
 @AddNewGenderTermlyFeeType
 Scenario: To verify Add new Gender Fee Type with Monthly Frequency
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1593,10 +1826,11 @@ Scenario: To verify Add new Gender Fee Type with Monthly Frequency
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @Gender
 @GenderTermlyFeeAssignment
 Scenario: To verify Gender Fee Type with Termly Fee Frequency Assignment Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1619,10 +1853,11 @@ Scenario: To verify Gender Fee Type with Termly Fee Frequency Assignment Functio
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 @Gender
 @MaleStudentTermlyFeeRecruitment
 Scenario: To verify newly added Male Amount with Termly fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1634,6 +1869,8 @@ Scenario: To verify newly added Male Amount with Termly fee frequency got reflec
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1642,6 +1879,8 @@ Scenario: To verify newly added Male Amount with Termly fee frequency got reflec
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify Male Termly Fee got reflected
 	When headteacher should navigate to feeinfo page to verify Male Termly Fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1649,6 +1888,8 @@ Scenario: To verify newly added Male Amount with Termly fee frequency got reflec
 	When headteacher enter the student name to verify Male Termly Fee got reflected 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1656,6 +1897,8 @@ Scenario: To verify newly added Male Amount with Termly fee frequency got reflec
 	When headteacher enter the student name to verify Male Termly Fee got reflected
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1665,6 +1908,8 @@ Scenario: To verify newly added Male Amount with Termly fee frequency got reflec
 	When Click on the student AdmissionFee Deposit icon 
     When Click on save button to do the AdmissionFeeDeposit 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -1672,6 +1917,8 @@ Scenario: To verify newly added Male Amount with Termly fee frequency got reflec
 	When enter the student name to update the photo schedule and click camera icon to verify Male Termly fee for Prerequiste
 	When enter the date and save
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -1680,6 +1927,8 @@ Scenario: To verify newly added Male Amount with Termly fee frequency got reflec
 	When click on upload CMF photo 
 	When Click on the choose file and upload button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1692,10 +1941,11 @@ Scenario: To verify newly added Male Amount with Termly fee frequency got reflec
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @Gender
 @FemaleStudentTermlyFeeRecruitment
 Scenario: To verify newly added Female Amount with Termly fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1707,6 +1957,8 @@ Scenario: To verify newly added Female Amount with Termly fee frequency got refl
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1715,6 +1967,8 @@ Scenario: To verify newly added Female Amount with Termly fee frequency got refl
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify Female Termly Fee got reflected
 	When headteacher should navigate to feeinfo page to verify Female Termly Fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1722,6 +1976,8 @@ Scenario: To verify newly added Female Amount with Termly fee frequency got refl
 	When headteacher enter the student name to verify Female Termly Fee got reflected 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1729,6 +1985,8 @@ Scenario: To verify newly added Female Amount with Termly fee frequency got refl
 	When headteacher enter the student name to verify Female Termly Fee got reflected
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1738,6 +1996,8 @@ Scenario: To verify newly added Female Amount with Termly fee frequency got refl
 	When Click on the student AdmissionFee Deposit icon 
     When Click on save button to do the AdmissionFeeDeposit 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -1745,6 +2005,8 @@ Scenario: To verify newly added Female Amount with Termly fee frequency got refl
 	When enter the student name to update the photo schedule and click camera icon to verify Female Termly fee for Prerequiste
 	When enter the date and save
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -1753,6 +2015,8 @@ Scenario: To verify newly added Female Amount with Termly fee frequency got refl
 	When click on upload CMF photo 
 	When Click on the choose file and upload button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1765,11 +2029,12 @@ Scenario: To verify newly added Female Amount with Termly fee frequency got refl
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 #-------------------------------------------Is Elder-One Time Fee----------------------------#
 @Elder
 @AddNewIsElderOneTimeFeeType
 Scenario: To verify Add new IsElder Fee Type with One Time Frequency
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1785,10 +2050,11 @@ Scenario: To verify Add new IsElder Fee Type with One Time Frequency
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @Elder
 @ElderOneTimeFeeAssignment
 Scenario: To verify Elder Fee Type with OneTime Fee Frequency Assignment Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1811,10 +2077,11 @@ Scenario: To verify Elder Fee Type with OneTime Fee Frequency Assignment Functio
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @Elder
 @ElderOneTimeFeeRecruitment
 Scenario: To verify newly added Elder Amount with OneTime fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1826,6 +2093,8 @@ Scenario: To verify newly added Elder Amount with OneTime fee frequency got refl
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1834,6 +2103,8 @@ Scenario: To verify newly added Elder Amount with OneTime fee frequency got refl
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify Elder OneTime Fee got reflected
 	When headteacher should navigate to feeinfo page to verify Elder OneTime Fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1841,6 +2112,8 @@ Scenario: To verify newly added Elder Amount with OneTime fee frequency got refl
 	When headteacher enter the student name to verify Elder OneTime Fee got reflected 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1848,6 +2121,8 @@ Scenario: To verify newly added Elder Amount with OneTime fee frequency got refl
 	When headteacher enter the student name to verify Elder OneTime Fee got reflected
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1860,11 +2135,12 @@ Scenario: To verify newly added Elder Amount with OneTime fee frequency got refl
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 @Elder
 @YoungerOneTimeFeeRecruitment
 Scenario: To verify newly added Younger Amount with OneTime fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1876,6 +2152,8 @@ Scenario: To verify newly added Younger Amount with OneTime fee frequency got re
 	And Enter the sibling details to verify PerFamily Fee Type
 	And Enter the Family member Info and other details to verify PerFamily Fee Type 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1884,6 +2162,8 @@ Scenario: To verify newly added Younger Amount with OneTime fee frequency got re
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify Younger OneTime Fee got reflected
 	When headteacher should navigate to feeinfo page to verify Younger OneTime Fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1891,6 +2171,8 @@ Scenario: To verify newly added Younger Amount with OneTime fee frequency got re
 	When headteacher enter the student name to verify Younger OneTime Fee got reflected 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1898,6 +2180,8 @@ Scenario: To verify newly added Younger Amount with OneTime fee frequency got re
 	When headteacher enter the student name to verify Younger OneTime Fee got reflected
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1910,13 +2194,14 @@ Scenario: To verify newly added Younger Amount with OneTime fee frequency got re
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 #-------------------------------------------Is Elder-Monthly----------------------------#
 
 @Elder
 @AddNewIsElderMonthlyFeeType
 Scenario: To verify Add new IsElder Fee Type with Monthly Frequency
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1932,10 +2217,11 @@ Scenario: To verify Add new IsElder Fee Type with Monthly Frequency
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @Elder
 @ElderMonthlyFeeAssignment
 Scenario: To verify Elder Fee Type with Monthly Fee Frequency Assignment Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1958,10 +2244,11 @@ Scenario: To verify Elder Fee Type with Monthly Fee Frequency Assignment Functio
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @Elder
 @ElderMonthlyFeeRecruitment
 Scenario: To verify newly added Elder Amount with Monthly fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -1973,6 +2260,8 @@ Scenario: To verify newly added Elder Amount with Monthly fee frequency got refl
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1981,6 +2270,8 @@ Scenario: To verify newly added Elder Amount with Monthly fee frequency got refl
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify Elder Monthly Fee got reflected
 	When headteacher should navigate to feeinfo page to verify Elder Monthly Fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1988,6 +2279,8 @@ Scenario: To verify newly added Elder Amount with Monthly fee frequency got refl
 	When headteacher enter the student name to verify Elder Monthly Fee got reflected 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -1995,6 +2288,8 @@ Scenario: To verify newly added Elder Amount with Monthly fee frequency got refl
 	When headteacher enter the student name to verify Elder Monthly Fee got reflected
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -2004,6 +2299,8 @@ Scenario: To verify newly added Elder Amount with Monthly fee frequency got refl
 	When Click on the student AdmissionFee Deposit icon 
     When Click on save button to do the AdmissionFeeDeposit 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -2011,6 +2308,8 @@ Scenario: To verify newly added Elder Amount with Monthly fee frequency got refl
 	When enter the student name to update the photo schedule and click camera icon to verify Elder Monthly fee for Prerequiste
 	When enter the date and save
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -2019,6 +2318,8 @@ Scenario: To verify newly added Elder Amount with Monthly fee frequency got refl
 	When click on upload CMF photo 
 	When Click on the choose file and upload button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -2031,10 +2332,11 @@ Scenario: To verify newly added Elder Amount with Monthly fee frequency got refl
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @Elder
 @YoungerMonthlyFeeRecruitment
 Scenario: To verify newly added Younger Amount with Monthly fee frequency got reflected in recruitment form Functionality
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -2046,6 +2348,8 @@ Scenario: To verify newly added Younger Amount with Monthly fee frequency got re
 	And Enter the sibling details to verify PerFamily Fee Type
 	And Enter the Family member Info and other details to verify PerFamily Fee Type 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -2054,6 +2358,8 @@ Scenario: To verify newly added Younger Amount with Monthly fee frequency got re
 	And headteacher should navigate to schoolinfo page and save the schoolinfo to verify Younger Monthly Fee got reflected
 	When headteacher should navigate to feeinfo page to verify Younger Monthly Fee got reflected
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -2061,6 +2367,8 @@ Scenario: To verify newly added Younger Amount with Monthly fee frequency got re
 	When headteacher enter the student name to verify Younger Monthly Fee got reflected 
 	When CSC should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -2068,6 +2376,8 @@ Scenario: To verify newly added Younger Amount with Monthly fee frequency got re
 	When headteacher enter the student name to verify Younger Monthly Fee got reflected
 	When CSM should navigate to finalpage and click Approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -2077,6 +2387,8 @@ Scenario: To verify newly added Younger Amount with Monthly fee frequency got re
 	When Click on the student AdmissionFee Deposit icon 
     When Click on save button to do the AdmissionFeeDeposit 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -2084,6 +2396,8 @@ Scenario: To verify newly added Younger Amount with Monthly fee frequency got re
 	When enter the student name to update the photo schedule and click camera icon to verify Younger Monthly fee for Prerequiste
 	When enter the date and save
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -2092,6 +2406,8 @@ Scenario: To verify newly added Younger Amount with Monthly fee frequency got re
 	When click on upload CMF photo 
 	When Click on the choose file and upload button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -2104,12 +2420,13 @@ Scenario: To verify newly added Younger Amount with Monthly fee frequency got re
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 #----------------------------------Delete Scenarios-------------------------------#
 
 @Fee
 @DeleteFromListPage
 Scenario: To verify delete from Fee Type list page functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -2129,10 +2446,11 @@ Scenario: To verify delete from Fee Type list page functionality
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @Fee
 @DeleteFromFeeMasterPage
 Scenario: To verify delete from Fee Master page functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -2159,12 +2477,13 @@ Scenario: To verify delete from Fee Master page functionality
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 #---------------------------------Edit Fee Type List Page------------------------#
 
 @Fee
 @EditFeeTypeListPage
 Scenario: To verify edit Fee Master list page functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -2185,12 +2504,13 @@ Scenario: To verify edit Fee Master list page functionality
 @logout
 Scenario: Log out the user
 And log out
-   
+And close window
 #------------------------------Delete all fee available for a particular center/school/class---------------------#
 
 @Fee
 @DeleteAllFeeAcrossCentre
 Scenario: To verify Single Fee is present else unable to submit the recruitment form
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -2199,6 +2519,8 @@ Scenario: To verify Single Fee is present else unable to submit the recruitment 
 	And Select Centre name to delete all the existing fee related to the centre
     And Verify for the existing fee and delete all fee
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -2210,6 +2532,8 @@ Scenario: To verify Single Fee is present else unable to submit the recruitment 
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -2223,12 +2547,13 @@ Scenario: To verify Single Fee is present else unable to submit the recruitment 
 @logout
 Scenario: Log out the user
 And log out	 
-
+And close window
 #------------------------------Ensure added new fee type can be placed a fee master entry--------------------#
 
 @Fee
 @AddedFeeReflectedToAllCentres
 Scenario: To verify added fee get reflected to all centres when All centres are selected from the dropdown
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -2253,11 +2578,12 @@ Scenario: To verify added fee get reflected to all centres when All centres are 
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 #-----------------------------Ensure fee editable reflect in student form--------------------#
 @Fee
 @EditableCheck
 Scenario: To verify  fee editable reflect in student form Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -2276,6 +2602,8 @@ Scenario: To verify  fee editable reflect in student form Functionality
 	And Select Fee Frequency
 	And Click save
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -2287,6 +2615,8 @@ Scenario: To verify  fee editable reflect in student form Functionality
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -2299,13 +2629,14 @@ Scenario: To verify  fee editable reflect in student form Functionality
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 #------------------------------Ensure fee is non-editable and reflect in student form ---------------#
 
 @Fee
 @NonEditableCheck
 Scenario: To verify  fee non editable fee reflect in student form Functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -2323,6 +2654,8 @@ Scenario: To verify  fee non editable fee reflect in student form Functionality
 	And Select Fee Frequency
 	And Click save
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -2334,6 +2667,8 @@ Scenario: To verify  fee non editable fee reflect in student form Functionality
 	And Enter the sibling details
 	And Enter the Family member Info and other details 
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -2353,6 +2688,7 @@ Scenario: To verify  fee non editable fee reflect in student form Functionality
 @Fee
 @ToastMessage
 Scenario: To verify mandatory toast message display functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -2372,11 +2708,12 @@ Scenario: To verify mandatory toast message display functionality
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 #-------------------------- check box verification-----------#
 @Fee
 @CheckBoxValidation
 Scenario: To verify Checkbox functionality
+And initiate web browser
 	And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -2395,11 +2732,13 @@ Scenario: To verify Checkbox functionality
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window
 #-------------------------Excess fee Validation-------------#
+
 @Fee
 @ExcessFeeValidation
 Scenario: To verify Excess functionality
+And initiate web browser
 	And Enter username as "fwamacaroline@yahoo.com" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -2409,8 +2748,12 @@ Scenario: To verify Excess functionality
 	And Click Student fee deposit icon
 	And Click Pay amount icon To pay the fee
 	And enter the Excess amout and verify not allowed
+	
+	
 @Fee	
 @ExcessFeeValidation
 @logout
 Scenario: Log out the user
 And log out		
+And close window
+

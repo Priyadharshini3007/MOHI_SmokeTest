@@ -3,6 +3,7 @@ Feature: To Verify PullOut,Readmission and Disabled Report
 @PullOutAndReAdmissionReport
 @PullOutReport
 Scenario: This is PullOut report scenario 
+And initiate web browser
 	Given user is on login page
 	And Enter username "CSCUsername" And click submit 
 	And Enter security answer And click submit 
@@ -32,3 +33,4 @@ Scenario: This is Disabled Report scenario
 @logout
 Scenario: Log out the user
  And log out 
+ And close window

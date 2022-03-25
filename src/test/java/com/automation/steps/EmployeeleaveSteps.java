@@ -18,12 +18,22 @@ public class EmployeeleaveSteps extends BaseClass {
 	}
 
 	@Given("^Aplly for Leave$")
-	public void aplly_for_Leave() throws Throwable {
+	public void Apply_for_Leave() throws Throwable {
 		empl.applyleave();
 	}
 	@Given("^login as HR Manager and Approve leave$")
 	public void login_as_HR_Manager_and_Approve_leave() throws Throwable {
-		empl.HRmanagerlogin();
+		empl.approveleave();
+	}
+	
+	@Given("^Apply for Leave$")
+	public void apply_for_Leave() throws Throwable {
+		empl.applyleave();
+	}
+
+	@Given("^Approve the leave$")
+	public void approve_the_leave() throws Throwable {
+		empl.approveleave1();
 	}
 }
 

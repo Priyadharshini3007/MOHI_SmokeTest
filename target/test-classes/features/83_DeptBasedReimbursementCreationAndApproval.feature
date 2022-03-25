@@ -4,6 +4,7 @@ Feature: This is Dept Based Reimbursement Creation and Approval feature
 @DeptBasedReimbursement
 @DeptBasedReimbursementCreationAndApproval
  Scenario: This is Dept Based Reimbursement Creation and Approval scenario
+ And initiate web browser
 	Given user is on login page
 	And Enter username "OfficeAdmin" And click submit 
 	And Enter security answer And click submit 
@@ -14,16 +15,18 @@ Feature: This is Dept Based Reimbursement Creation and Approval feature
 	And click submit reimbursement button to submit the reimbursement
 	And reimbursement Approve based on the KSH in the "Dept"
 	
-@Requisition
-@DeptBasedReimbursement
-@DeptBasedReimbursementCreationAndApproval
- Scenario: Log out the user
- And log out
-
+@Requisition 
+@DeptBasedReimbursement 
+@DeptBasedReimbursementCreationAndApproval 
+Scenario: Log out the user 
+	And log out 
+	And close window 
+	
 @Requisition
 @DeptBasedReimbursement
 @DeptBasedReimbursementCEODenied
  Scenario: This is Department Based Reimbursement CEO Denied scenario 
+ And initiate web browser
 	Given user is on login page
 	And Enter username "OfficeAdmin" And click submit 
 	And Enter security answer And click submit 
@@ -34,6 +37,8 @@ Feature: This is Dept Based Reimbursement Creation and Approval feature
 	And click submit reimbursement button to submit the reimbursement
 	And reimbursement Approve partially based on the KSH in the "Dept"
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username "CEO" And click submit 
 	And Enter security answer And click submit 
 	And Enter password And click submit 
@@ -45,11 +50,13 @@ Feature: This is Dept Based Reimbursement Creation and Approval feature
 @DeptBasedReimbursementCEODenied
  Scenario: Log out the user
  And log out
+ And close window
  
 @Requisition
 @DeptBasedReimbursement
 @DeptBasedReimbursementCEOsendforclarification 
  Scenario: This is CEO sendforclarification scenario 
+ And initiate web browser
 	And Enter username "OfficeAdmin" And click submit 
 	And Enter security answer And click submit 
 	And Enter password And click submit
@@ -59,6 +66,8 @@ Feature: This is Dept Based Reimbursement Creation and Approval feature
 	And click submit reimbursement button to submit the reimbursement
 	And reimbursement Approve partially based on the KSH in the "Dept"
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username "CEO" And click submit 
 	And Enter security answer And click submit 
 	And Enter password And click submit 
@@ -70,3 +79,4 @@ Feature: This is Dept Based Reimbursement Creation and Approval feature
 @DeptBasedReimbursementCEOsendforclarification 
  Scenario: Log out the user
  And log out
+ And close window

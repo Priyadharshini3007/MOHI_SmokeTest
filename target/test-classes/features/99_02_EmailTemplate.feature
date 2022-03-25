@@ -6,6 +6,7 @@ Feature: This is the Email Template feature
     
 @EmailTemplateAdd
 Scenario: 11397_This is Email Template Add Scenario
+And initiate web browser 
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -19,11 +20,13 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window
 
 
 
 @EmailTemplateEdit
 Scenario: 11398_This is Email Template Edit Scenario
+And initiate web browser 
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -37,10 +40,11 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
  
 @EmailTemplateDelete
 Scenario: 11399_This is Email Template Delete Scenario
+And initiate web browser 
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -54,10 +58,11 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 @EmailTemplateReturnToList
 Scenario: 14363_This is Email Template ReturnToList Scenario
+And initiate web browser 
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -71,3 +76,4 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window

@@ -1,6 +1,7 @@
 Feature: This is the Master Detail List feature 
 @MasterDetailListView
 Scenario: 11393_This is to Ensure that master detail list can be viewed
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -13,10 +14,11 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 @MasterDetailListEdit
 Scenario: 11395_This is Master Detail List Edit Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -31,11 +33,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 
 @MasterDetailListDelete
 Scenario: 14344_This is Master Detail List Delete Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -50,12 +53,13 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 
 
 @MasterDetailListNotDelete
 Scenario: 14344_This is to verify that master data will not be deleted when it is associated with any other system details
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -70,13 +74,14 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 
 
 
 @MasterDetailListSort
 Scenario: 14349_This is Master Detail List Sort Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -92,9 +97,10 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 @MasterDetailListSortDesc
 Scenario: 14349_This is Master Detail List decending order Sort Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -111,11 +117,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 
 @MasterDetailListSearch
 Scenario: 14350_This is Master Detail List Search Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -138,10 +145,11 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 @MasterDetailListPagingFeature
 Scenario: 14351_This is Master Detail List Paging Feature Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -154,7 +162,7 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 
 

@@ -3,6 +3,7 @@ Feature: To verify the fast Page Functionalities
 @fast
 @AssessmentGeneration
 Scenario: To check whether the Assessment generation is able to submit
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -20,6 +21,8 @@ Scenario: To check whether the Assessment generation is able to submit
 	And click on the View Assessment form Details icon
 	And verify the print page
 	And log out
+	And close window 
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -33,10 +36,12 @@ Scenario: To check whether the Assessment generation is able to submit
 @Assessmentreport
 Scenario: Log out the user
 	And log out
+	And close window 
 
 @fast
 @Assessmentreport
   Scenario: To verify the Assessment report
+  And initiate web browser
  	 And Enter username as "josk.ht@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -49,10 +54,12 @@ Scenario: Log out the user
 @Assessmentreport
 Scenario: Log out the user
 	And log out
+	And close window 
   
 @fast   
 @Assessmentschedulereport
 Scenario: To Check whether the Assessment schedule report is getting generated
+And initiate web browser
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -71,10 +78,12 @@ Scenario: To Check whether the Assessment schedule report is getting generated
 @Assessmentschedulereport
 Scenario: Log out the user
 	And log out
+	And close window 
 	
 @fast
   @Assessmentanalysisreport
   Scenario: To verify the assessment analysis report
+  And initiate web browser
   	And Enter username as "josk.ht@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -131,3 +140,4 @@ Scenario: Log out the user
 @fast
 Scenario: Log out the user
 	And log out
+	And close window 

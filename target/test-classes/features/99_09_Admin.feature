@@ -3,6 +3,7 @@ Feature: To verify the User menus
 #@adduser	
 @AddingSocialworker 
 Scenario: 10982_To add social worker User 
+And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -20,6 +21,7 @@ Scenario: 10982_To add social worker User
 	#@adduser
 	# @AddingHeadTeacher
 Scenario: To add Head Teacher User 
+And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -36,6 +38,7 @@ Scenario: To add Head Teacher User
 	#@adduser
 	#@AddingClassTeacher
 Scenario: To add Class Teacher User 
+And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -51,6 +54,7 @@ Scenario: To add Class Teacher User
 	# @adduser
 @AddingSeniorTeacher 
 Scenario: To add Senior Teacher User 
+And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -66,6 +70,7 @@ Scenario: To add Senior Teacher User
 	#@adduser 
 @AddingregionalEducationCoordinator 
 Scenario: To add regional education coordinator User 
+And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -83,6 +88,7 @@ Scenario: To add regional education coordinator User
 	#@adduser
 @AddingFinanceManager 
 Scenario: To add Finance Manager User 
+And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -98,6 +104,7 @@ Scenario: To add Finance Manager User
 	#@adduser
 @AddingLogisticaccountassistant 
 Scenario: To add logistics account assistant User 
+And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -113,6 +120,7 @@ Scenario: To add logistics account assistant User
 	#@adduser
 @AddingChildsponsorshipcoordinator 
 Scenario: To add child sponsorship coordinator User 
+And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -126,7 +134,8 @@ Scenario: To add child sponsorship coordinator User
 	
 	
 @EditSocialWorker 
-Scenario: 11339_To Edit social worker User 
+Scenario: 11339_To Edit social worker User
+And initiate web browser 
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -156,6 +165,7 @@ Scenario: 11339_To Edit social worker User
 	
 @UnlockTheUser 
 Scenario: 11341_To verify the user can be unlocked 
+And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -168,6 +178,7 @@ Scenario: 11341_To verify the user can be unlocked
 	
 @UsersReturnToList 
 Scenario: 14365_This is to verify Users Return To List 
+And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -179,6 +190,7 @@ Scenario: 14365_This is to verify Users Return To List
 	
 @DeleteUsers 
 Scenario: 11365_This is to verify Delete Users 
+And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -191,6 +203,7 @@ Scenario: 11365_This is to verify Delete Users
 @DuplicateMailError 
 Scenario: 
 	14356_This is to ensure that system validates the duplicated mail and prompts to enter new mailScenario 
+	And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -204,6 +217,7 @@ Scenario:
 @DefaultRoleAllocated 
 Scenario: 
 	14357_This is to ensure that default role of that organization will be provided once the user is setup 
+	And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -217,6 +231,7 @@ Scenario:
 @DeleteDefaultRole 
 Scenario: 
 	14358_This is to Ensure that siteadmin is able to delete the default role that has been assigned 
+	And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -230,6 +245,7 @@ Scenario:
 @NewRoleGetAddedFromTheDropdown 
 Scenario: 
 	14359_This is to ensure that siteadmin is able to add new role by Selecting a role from the role drop down
+	And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -244,6 +260,7 @@ Scenario:
 @ChangeTheStatus 
 Scenario: 
 	14360_This is to ensure that siteadmin is able to change the user status
+	And initiate web browser
 	Given user is on login page 
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 

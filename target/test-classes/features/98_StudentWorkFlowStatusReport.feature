@@ -2,6 +2,7 @@ Feature: To Verify student workflow status report
 @Reports 
 @StudentWorkFlowStatusReport
 Scenario: This is student workflow status report Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -16,3 +17,4 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window

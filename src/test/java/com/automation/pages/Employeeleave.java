@@ -70,10 +70,13 @@ public class Employeeleave {
 	WebElement submit;
 	@FindBy(xpath = "//*[@title='Expand Employee']")
 	WebElement ExpandEmployee;
+	@FindBy(xpath="i[title='Expand Employee']")
+	WebElement EmployeeAlert;
+	
 	
 	public void NavigateLeave() throws InterruptedException{
-		excelutil.Excelp(".//EmployeeLeave.xlsx");
-		login(excelutil.getData(0,2,0),excelutil.getData(0, 1,1),excelutil.getData(0, 1,2));
+	//	excelutil.Excelp(".//EmployeeLeave.xlsx");
+    //  login(excelutil.getData(0,2,0),excelutil.getData(0, 1,1),excelutil.getData(0, 1,2));
 		nav1.click(); 
 		nav2.click();
 	}
@@ -109,7 +112,8 @@ public class Employeeleave {
 				
 	}
 	
-	public void HRmanagerlogin() throws InterruptedException{
+	public void approveleave() throws InterruptedException{
+	
 		excelutil.Excelp(".//EmployeeLeave.xlsx");
 		logout();
 		login(excelutil.getData(0, 1,0),excelutil.getData(0, 1,1),excelutil.getData(0, 1,2));
@@ -123,6 +127,24 @@ public class Employeeleave {
 		approvebtn.click();
 		comment.sendKeys(excelutil.getData(0, 1,4));
 		submitbbbtn.click();
+		
+	}
+	
+	public void approveleave1() throws InterruptedException{
+		
+		
+		webDriverclick(ExpandEmployee);
+
+
+		WebElementUtils.waitForVisible(clickalert);
+
+		WebElementUtils.scrolltoview(clickalert);
+		clickalert.click();
+		searchbox.sendKeys(excelutil.getData(0, 1,3));
+		approvebtn.click();
+		comment.sendKeys(excelutil.getData(0, 1,4));
+		submitbbbtn.click();
+		
 		
 	}
 	

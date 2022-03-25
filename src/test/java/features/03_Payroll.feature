@@ -3,6 +3,7 @@ Feature: To Verify the payroll module Functionalities
 @payroll
 @createpayrollstructure
 Scenario: Creating payroll structure entry
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -18,10 +19,12 @@ Scenario: Creating payroll structure entry
 @createpayrollstructure
 Scenario: Logout
 	And log out
+	And close window 
 
 @payroll
 @updatepayrollstructure
 Scenario: Updating payroll structure entry
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -36,10 +39,12 @@ Scenario: Updating payroll structure entry
 @updatepayrollstructure
 Scenario: Logout
 	And log out
+	And close window 
 
 @payroll
 @Manualpayroll
 Scenario: To verify the manual payroll process
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -57,10 +62,12 @@ Scenario: To verify the manual payroll process
 @Manualpayroll
 Scenario: Logout
 And log out
+And close window 
 
 @payroll
 @paystructureupload   
 Scenario Outline: To verify the paystructure upload process
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -79,10 +86,12 @@ Examples:
 @paystructureupload 
 Scenario: Logout
 	And log out
+	And close window 
 
 @payroll
 @generatep9aform
 Scenario Outline: To verify the p9a form is generated
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -102,10 +111,12 @@ Examples:
 @generatep9aform
 Scenario: Logout
 	And log out
+	And close window 
  
 @payroll
 @Bankentry-create
 Scenario: To verify the create Bank Entry 
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -118,10 +129,12 @@ Scenario: To verify the create Bank Entry
 @Bankentry-create
 Scenario: Logout
 	And log out
+	And close window 
  
 @payroll
 @Bankentry-update
 Scenario Outline: To verify the update Bank Entry 
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -139,10 +152,12 @@ Examples:
 @Bankentry-update
 Scenario: Logout
 	And log out
+	And close window 
   
 @payroll
 @payslip-Addchequenum
  Scenario Outline: To add the cheque number for payslips
+    And initiate web browser
  	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -161,10 +176,12 @@ Examples:
 @payslip-Addchequenum
 Scenario: Logout
 And log out
+And close window 
 
 @payroll
 @payslip-Printandemail
 Scenario: To verify the print/email option for the selected payslips
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -179,10 +196,12 @@ Scenario: To verify the print/email option for the selected payslips
 @payslip-Printandemail
 Scenario: Logout
 	And log out
+	And close window 
 
 @payroll
 @payslip-Filterandsort
 Scenario Outline: To verify the search,clear and sorting functionality
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -201,10 +220,12 @@ Scenario Outline: To verify the search,clear and sorting functionality
 @payslip-Filterandsort
 Scenario: Logout
 And log out
+And close window 
 
 @payroll 
 @employeeloanreport-individualloan-true
 Scenario Outline: To verify the employee loan report with individualloan-true
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -224,10 +245,12 @@ Examples:
 @employeeloanreport-individualloan-true
 Scenario: Logout
 	And log out
+	And close window 
  
 @payroll
 @employeeloanreport-individualloan-false
  Scenario Outline: To verify the employee loan report with individualloan-false
+    And initiate web browser
  	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -247,10 +270,12 @@ Scenario: Logout
 @employeeloanreport-individualloan-false
 Scenario: Logout
 	And log out
+	And close window 
  
 @payroll
 @netandgrosspayreport-normal
 Scenario Outline: To Verify the netpay and grosspay loan report
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -271,10 +296,12 @@ Examples:
 @netandgrosspayreport-normal
 Scenario: Logout
 	And log out
+	And close window 
   
 @payroll
 @netandgrosspay-comparitive
  Scenario Outline: To Verify the netpay and grosspay loan report using comparitive
+    And initiate web browser
  	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -296,10 +323,12 @@ Examples:
 @netandgrosspay-comparitive
 Scenario: Logout
 	And log out
+	And close window 
   
 @payroll
 @staffagegroupreport
 Scenario Outline: TO verify the staff age group report
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -318,10 +347,12 @@ Examples:
 @staffagegroupreport
 Scenario: Logout
 	And log out
+	And close window 
   
 @payroll
 @Staffcountreport-normal
 Scenario Outline: To verify the staffcountreport
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -341,10 +372,12 @@ Examples:
 @Staffcountreport-normal
  Scenario: Logout
 	And log out
+	And close window 
   
 @payroll
 @Staffcountreport-comparitive
 Scenario Outline: To verify the staffcount report with comparitive
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -365,21 +398,23 @@ Examples:
 @Staffcountreport-comparitive
 Scenario: Logout
 	And log out
+	And close window 
   
-@payroll
-@Summaryreportbydesignation
- Scenario Outline: TO verify the summaryreport by designation
- 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
+@payroll 
+@Summaryreportbydesignation 
+Scenario Outline: TO verify the summaryreport by designation 
+	And initiate web browser 
+	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
-	And Enter password as "Password#123" And click submit
-	 Given Navigate to payroll header
-	 When click on summary report by designation link
-	 Then select the year "<year>" and month "<month>"
-	 And choose the centre "<centre>" and designation "<designation>"
-	 When enter the Staff "<stafffrom>" and staff to "<staffto>"
-	 Then select the recruitment type "<recruitmenttype>"
-	 When click on view report
-	 Then export the designation excel report "<downloadfile>"
+	And Enter password as "Password#123" And click submit 
+	Given Navigate to payroll header 
+	When click on summary report by designation link 
+	Then select the year "<year>" and month "<month>" 
+	And choose the centre "<centre>" and designation "<designation>" 
+	When enter the Staff "<stafffrom>" and staff to "<staffto>" 
+	Then select the recruitment type "<recruitmenttype>" 
+	When click on view report 
+	Then export the designation excel report "<downloadfile>" 
  
 Examples:
   |year|month|centre|designation|stafffrom|staffto|recruitmenttype|downloadfile|
@@ -389,10 +424,12 @@ Examples:
 @Summaryreportbydesignation
 Scenario: Logout
 	And log out
+	And close window 
   
 @payroll
 @summaryreport-payrollsummary-normal
 Scenario Outline: To verify the summary report is getting generated
+    And initiate web browser
  	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -414,10 +451,12 @@ Examples:
 @summaryreport-payrollsummary-normal
 Scenario: Logout
 And log out
+And close window 
 
 @payroll
 @summaryreport-payrollsummary-comparitive
   Scenario Outline: To verify the summary report is getting generated using comparitive type
+    And initiate web browser
   	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -440,10 +479,12 @@ Examples:
 @summaryreport-payrollsummary-comparitive
 Scenario: Logout
 	And log out
+	And close window 
   
 @payroll
 @summaryreport-Statutoryreport
 Scenario Outline: To verify the Statutory summary report
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -464,10 +505,12 @@ Examples:
 @summaryreport-Statutoryreport
 Scenario: Logout
 	And log out
+	And close window 
   
 @payroll
 @summaryreport-Deductionreport
 Scenario Outline: To verify the Deduction summary report
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -488,10 +531,12 @@ Examples:
 @summaryreport-Deductionreport
 Scenario: Logout
 	And log out
+	And close window 
 
 @payroll
 @summaryreport-Statutoryanddeductions
 Scenario Outline: To verify the Statutory and Deduction summary report
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -513,10 +558,12 @@ Examples:
 @summaryreport-Statutoryanddeductions
 Scenario: Logout
 	And log out
+	And close window 
 
 @payroll
 @summaryreport-BankTransfer
 Scenario Outline: To verify the Bank summary report
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -538,10 +585,12 @@ Examples:
 @summaryreport-BankTransfer
 Scenario: Logout
 	And log out
+	And close window 
 
 @payroll
 @BDSsummaryReport
 Scenario Outline: To verify the BDS summary report
+    And initiate web browser
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -561,3 +610,4 @@ Examples:
 @BDSsummaryReport
 Scenario: Logout
 	And log out
+	And close window 

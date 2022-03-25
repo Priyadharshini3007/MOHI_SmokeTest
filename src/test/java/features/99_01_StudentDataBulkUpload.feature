@@ -1,6 +1,7 @@
 Feature: This is the Student Data Bulk Upload feature 
 @StudentDataBulkUpload
 Scenario: This is Student Data Bulk Upload Scenario
+And initiate web browser 
 Given user is on login page
 	And Enter username "Socialworker" And click submit 
 	And Enter security answer And click submit 
@@ -18,4 +19,5 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window
 

@@ -2,6 +2,7 @@ Feature: To Verify parent contribution feature
 #@Reports
 @ParentContributionReport
 Scenario: This is Parent Contribution Report scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "Accountant" And click submit 
 	And Enter security answer And click submit 
@@ -15,3 +16,4 @@ Given user is on login page
 @logout
 Scenario: Log out the user
  And log out
+ And close window

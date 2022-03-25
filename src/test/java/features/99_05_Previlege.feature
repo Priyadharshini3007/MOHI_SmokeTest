@@ -1,6 +1,7 @@
 Feature: This is the Previlege feature 
 @AddPrevilege
 Scenario: This is Add Previlege Scenario
+And initiate web browser 
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -15,10 +16,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window
 
 @AddPrevilege
 @EditExistingPrevilege
 Scenario: This is edit existing  Previlege Scenario
+And initiate web browser 
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -33,10 +36,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window
 
 @AddPrevilege
 @PrevilegeReturnToList
 Scenario: This is Previlege Return To List Scenario
+And initiate web browser 
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -51,10 +56,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window
 
 @AddPrevilege
 @PrevilegeListCanBeViewed
 Scenario: This is Previlege can be able to view Scenario
+And initiate web browser 
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -68,3 +75,4 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window

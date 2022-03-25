@@ -1,6 +1,7 @@
 Feature: This is the student delete Denied feature 
 @StudentDeleteDeniedFeature
 Scenario: This is student delete Denied Scenario
+And initiate web browser 
 Given user is on login page
 	And Enter username "CSO" And click submit 
 	And Enter security answer And click submit 
@@ -10,6 +11,8 @@ Given user is on login page
 	And click delete icon to delete the student
 	And Enter the comments and click save and click Ok for both alerts and logout
 	And log out	
+	And close window
+	And initiate web browser 
 	And Enter username "CSMUsername" And click submit 
 	And Enter security answer And click submit 
 	And Enter password And click submit
@@ -25,3 +28,4 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window

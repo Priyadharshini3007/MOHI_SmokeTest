@@ -24,4 +24,34 @@ public class EmployeeListsteps extends BaseClass {
 		
 	}
 	
+	@Given("^unpaidleave methode$")
+	public void unpaidleave_methode() throws Throwable {
+		el.unpaidleavemethod();
+	}
+
+	@Given("^appraisal notapplicable methode$")
+	public void appraisal_notapplicable_methode() throws Throwable {
+		el.appraisalnotapplicable();
+	}
+
+	@Given("^Rerun payroll methode$")
+	public void rerun_payroll_methode() throws Throwable {
+		el.rerubpayroll();
+
+	}
+
+	@Given("^download Pdf and Excel$")
+	public void download_Pdf_and_Excel() throws Throwable {
+		el.download();
+	}
+
+	@Given("^recruit an employee$")
+	public void recruit_an_employee() throws Throwable {
+		el.recruitmentemployee();
+	}
+	
+	
+	
+	
+	
 }

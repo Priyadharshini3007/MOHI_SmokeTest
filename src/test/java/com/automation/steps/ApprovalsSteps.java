@@ -80,7 +80,7 @@ public class ApprovalsSteps extends BaseClass{
 		
 		hta.cscsendforclarificationStudent();
 		
-		hta.savewhenreceivedmoreinformationfromsw();
+//		hta.savewhenreceivedmoreinformationfromsw();
 		
 		hta.enterswdetailsforcscresumbission();
 		

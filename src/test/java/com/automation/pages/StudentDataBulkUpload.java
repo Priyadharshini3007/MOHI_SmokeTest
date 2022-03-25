@@ -121,9 +121,10 @@ public class StudentDataBulkUpload {
 	
 	public void Errorlog() throws InterruptedException {
 
-		String exp="Uploaded successfully.";
+		String exp="Error Records=0,Warning Records=0,Inserted Records=1,Updated Records=0";
 		  String text=Flashmessage.getText();
-		   Assert.assertEquals(text,exp);
+		   Assert.assertEquals(text,exp); 
+		   Assert.assertEquals(text,text);
 	
 		System.out.println(Flashmessage.getText());
 		

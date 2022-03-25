@@ -1,6 +1,7 @@
 Feature: This is the student disable feature 
 @StudentDisableFeature
 Scenario: This is student disable Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "CSO" And click submit 
 	And Enter security answer And click submit 
@@ -14,3 +15,4 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window

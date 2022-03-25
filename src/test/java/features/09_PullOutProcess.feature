@@ -3,6 +3,7 @@ Feature: To verify pull out process
 @pulloutprocess
 @PullOutProcessApprove
  Scenario: Verification of pull out approval process
+ And initiate web browser
  	And Enter username as "bond.sw1@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -14,6 +15,8 @@ Feature: To verify pull out process
 	And Enter the Comments
 	And Click the Submit button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "bond.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -23,6 +26,8 @@ Feature: To verify pull out process
 	And Enter the Comments
 	And Click the 'Approve and Send to Next Step' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -32,6 +37,8 @@ Feature: To verify pull out process
 	And Enter the Comments
 	And Click the 'Approve and Send to Next Step' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -45,10 +52,13 @@ Feature: To verify pull out process
 @PullOutProcessApprove
 Scenario: Log out the user
 	And log out
+	And close window
+	
 
 @pulloutprocess
 @PullOutHTNeedInfoAndDenial
 Scenario: Verification of pull out head teacher need information and denial process
+And initiate web browser
 	And Enter username as "bond.sw1@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -60,6 +70,8 @@ Scenario: Verification of pull out head teacher need information and denial proc
 	And Enter the Comments
 	And Click the Submit button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "bond.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -69,6 +81,8 @@ Scenario: Verification of pull out head teacher need information and denial proc
 	And Enter the Comments
 	And Click the 'Send for Clarification to Previous Step' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "bond.sw1@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -78,6 +92,8 @@ Scenario: Verification of pull out head teacher need information and denial proc
 	And Enter the Comments
 	And Click the 'Send Clarification' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "bond.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -88,6 +104,8 @@ Scenario: Verification of pull out head teacher need information and denial proc
 	And Click the 'Deny and Close Application' button
 	And Click the yes button to confirm the deny process
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "bond.sw1@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -97,10 +115,12 @@ Scenario: Verification of pull out head teacher need information and denial proc
 @PullOutHTNeedInfoAndDenial
 Scenario: Log out the user
 	And log out
+	And close window
 
 @pulloutprocess
 @PullOutCSCNeedInfoAndDenied
 Scenario: Verification of pull out CSC need information and denial process
+And initiate web browser
  	And Enter username as "bond.sw1@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -112,6 +132,8 @@ Scenario: Verification of pull out CSC need information and denial process
 	And Enter the Comments
 	And Click the Submit button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "bond.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -121,6 +143,8 @@ Scenario: Verification of pull out CSC need information and denial process
 	And Enter the Comments
 	And Click the 'Approve and Send to Next Step' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -130,6 +154,8 @@ Scenario: Verification of pull out CSC need information and denial process
 	And Enter the Comments
 	And Click the 'Send for Clarification to Previous Step' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "bond.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -139,6 +165,8 @@ Scenario: Verification of pull out CSC need information and denial process
 	And Enter the Comments
 	And Click the 'Send Clarification' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -149,6 +177,8 @@ Scenario: Verification of pull out CSC need information and denial process
 	And Click the 'Deny and Close Application' button
 	And Click the yes button to confirm the deny process
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "bond.sw1@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -158,10 +188,12 @@ Scenario: Verification of pull out CSC need information and denial process
 @PullOutCSCNeedInfoAndDenied
 Scenario: Log out the user
 	And log out
+	And close window
 
 @pulloutprocess
 @PullOutCSMNeedInfoAndDenied
 Scenario: Verification of pull out CSM need information and denial process
+And initiate web browser
  	And Enter username as "bond.sw1@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -173,6 +205,8 @@ Scenario: Verification of pull out CSM need information and denial process
 	And Enter the Comments
 	And Click the Submit button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "bond.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -182,6 +216,8 @@ Scenario: Verification of pull out CSM need information and denial process
 	And Enter the Comments
 	And Click the 'Approve and Send to Next Step' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -191,6 +227,8 @@ Scenario: Verification of pull out CSM need information and denial process
 	And Enter the Comments
 	And Click the 'Approve and Send to Next Step' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -200,6 +238,8 @@ Scenario: Verification of pull out CSM need information and denial process
 	And Enter the Comments
 	And Click the 'Send for Clarification to Previous Step' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -209,6 +249,8 @@ Scenario: Verification of pull out CSM need information and denial process
 	And Enter the Comments
 	And Click the 'Send Clarification' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -219,6 +261,8 @@ Scenario: Verification of pull out CSM need information and denial process
 	And Click the 'Deny and Close Application' button
 	And Click the yes button to confirm the deny process
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "bond.sw1@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -228,6 +272,7 @@ Scenario: Verification of pull out CSM need information and denial process
 @PullOutCSMNeedInfoAndDenied
 Scenario: Log out the user
 	And log out
+	And close window
 
 @pulloutprocess
 @PullOutCSCNeedInfoFrmSW
@@ -243,6 +288,8 @@ Scenario:  Verification of pull out CSC need information from social worker proc
 	And Enter the Comments
 	And Click the Submit button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "bond.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -252,6 +299,8 @@ Scenario:  Verification of pull out CSC need information from social worker proc
 	And Enter the Comments
 	And Click the 'Approve and Send to Next Step' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -261,6 +310,8 @@ Scenario:  Verification of pull out CSC need information from social worker proc
 	And Enter the Comments
 	And Click the 'Send for Clarification to Social Worker' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "bond.sw1@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -270,6 +321,8 @@ Scenario:  Verification of pull out CSC need information from social worker proc
 	And Enter the Comments
 	And Click the 'Send Clarification' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -279,6 +332,8 @@ Scenario:  Verification of pull out CSC need information from social worker proc
 	And Enter the Comments
 	And Click the 'Approve and Send to Next Step' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -292,6 +347,7 @@ Scenario:  Verification of pull out CSC need information from social worker proc
 @PullOutCSCNeedInfoFrmSW
 Scenario: Log out the user
 	And log out
+	And close window
 
 @pulloutprocess
 @PullOutCSMNeedInfoFrmSW
@@ -307,6 +363,8 @@ Scenario:  Verification of pull out CSM need information from social worker proc
 	And Enter the Comments
 	And Click the Submit button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "bond.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -316,6 +374,8 @@ Scenario:  Verification of pull out CSM need information from social worker proc
 	And Enter the Comments
 	And Click the 'Approve and Send to Next Step' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -325,6 +385,8 @@ Scenario:  Verification of pull out CSM need information from social worker proc
 	And Enter the Comments
 	And Click the 'Approve and Send to Next Step' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -334,6 +396,8 @@ Scenario:  Verification of pull out CSM need information from social worker proc
 	And Enter the Comments
 	And Click the 'Send for Clarification to Social Worker' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "bond.sw1@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -343,6 +407,8 @@ Scenario:  Verification of pull out CSM need information from social worker proc
 	And Enter the Comments
 	And Click the 'Send Clarification' button
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "AndriaMoushon@cmfi.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -357,3 +423,4 @@ Scenario:  Verification of pull out CSM need information from social worker proc
 @PullOutCSMNeedInfoFrmSW
 Scenario: Log out the user
 	And log out
+	And close window

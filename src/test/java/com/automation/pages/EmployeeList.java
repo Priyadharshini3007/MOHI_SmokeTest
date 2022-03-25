@@ -148,9 +148,10 @@ public void searchByPin(){
 		submit.click();		
 	}
 	public void navigateemplist() throws InterruptedException{
-		excelutil.Excelp(".//EmployeeList.xlsx");
 		
-		login(excelutil.getData(1, 2,0),excelutil.getData(1, 1,1),excelutil.getData(1, 1,2));
+//		excelutil.Excelp(".//EmployeeList.xlsx");
+//		login(excelutil.getData(1, 2,0),excelutil.getData(1, 1,1),excelutil.getData(1, 1,2));
+		
 		drop1.click();
 		emplist.click();
 		//search1();	

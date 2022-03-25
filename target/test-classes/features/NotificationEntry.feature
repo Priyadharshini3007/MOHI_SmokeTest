@@ -2,6 +2,7 @@ Feature: To verify Notification Entry Process
 @NotificationEntry
 @AddNotification
  Scenario: Verification of Add Notification process
+   And initiate web browser 
 	And Enter username as "siteadmin" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -20,6 +21,7 @@ Feature: To verify Notification Entry Process
 @NotificationEntry	
 @EditNotificationEntry
  Scenario: Verification of Edit Notification process
+   And initiate web browser 
  	And Enter username as "siteadmin" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit
@@ -38,3 +40,4 @@ Feature: To verify Notification Entry Process
 @EditNotificationEntry
 Scenario: Log out the user
  And log out
+ And close window

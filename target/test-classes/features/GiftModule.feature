@@ -2,6 +2,7 @@ Feature: To verify Gift Functionalities
 @Gift
 @CashGiftSuccesfulDeliverable
 Scenario: To check whether the Gift is able to add
+And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -16,6 +17,8 @@ Scenario: To check whether the Gift is able to add
 	And Enter the Comments for gift
 	And Click save to save the gift 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "joice.asuluda@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -36,6 +39,8 @@ Scenario: To check whether the Gift is able to add
 	And Click Ok for the popup
 	And Verify Store admin receives an alert says xx order as picked up today which is non clickable 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -66,10 +71,11 @@ Scenario: To check whether the Gift is able to add
 @CashGiftSuccesfulDeliverable
 Scenario: Log out the user
 	And log out	
-
+And close window
 @Gift	
 @CashGiftUndeliverable
 Scenario: To check Gift Processing functionality when student is not available
+And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -84,6 +90,8 @@ Scenario: To check Gift Processing functionality when student is not available
 	And Enter the Comments for gift
 	And Click save to save the gift
 	And log out 
+	And close window
+	And initiate web browser
 	And Enter username as "joice.asuluda@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -104,6 +112,8 @@ Scenario: To check Gift Processing functionality when student is not available
 	And Click Ok for the popup
 	And Verify Store admin receives an alert says xx order as picked up today which is non clickable 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -127,10 +137,11 @@ Scenario: To check Gift Processing functionality when student is not available
 @CashGiftUndeliverable
 Scenario: Log out the user
 	And log out	
-
+And close window
 @Gift	
 @GiftByMailSuccessfulDelivered
 Scenario: To verify Gift By Mail successful delivered Functionality
+And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -166,10 +177,11 @@ Scenario: To verify Gift By Mail successful delivered Functionality
 @GiftByMailSuccessfulDelivered
 Scenario: Log out the user
 	And log out	
-	
+	And close window
 @Gift
 @GiftByMailUnDelivered
 Scenario: To verify Gift By Mail undeliverd Functionality
+And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -203,10 +215,11 @@ Scenario: To verify Gift By Mail undeliverd Functionality
 @GiftByMailUnDelivered
 Scenario: Log out the user
 	And log out	
-
+And close window
 @Gift	
 @GiftByMailBulkUploadSuccesfulDelivered
 Scenario: To verify Gift By Mail Bulk Upload Functionality
+And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -236,10 +249,11 @@ Scenario: To verify Gift By Mail Bulk Upload Functionality
 @GiftByMailBulkUploadSuccesfulDelivered	
 Scenario: Log out the user
 	And log out	
-		
+	And close window	
 @Gift	
 @GiftByMailBulkUploadUnDelivered
 Scenario: To verify Gift By Mail Bulk Upload undelivered Functionality
+And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -267,10 +281,11 @@ Scenario: To verify Gift By Mail Bulk Upload undelivered Functionality
 @GiftByMailBulkUploadUnDelivered
 Scenario: Log out the user
 	And log out	
-
+And close window
 @Gift	
 @SwapGift
 Scenario: To check whether the Gift is able to Swap
+And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -285,6 +300,8 @@ Scenario: To check whether the Gift is able to Swap
 	And Enter the Comments for gift
 	And Click save to save the gift 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "joice.asuluda@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -305,6 +322,8 @@ Scenario: To check whether the Gift is able to Swap
 	And Click Ok for the popup
 	And Verify Store admin receives an alert says xx order as picked up today which is non clickable 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -321,10 +340,11 @@ Scenario: To check whether the Gift is able to Swap
 @SwapGift
 Scenario: Log out the user
 	And log out	
-
+And close window
 @Gift	
 @HoldGift
 Scenario: To check whether the Gift is able to Hold
+And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -339,6 +359,8 @@ Scenario: To check whether the Gift is able to Hold
 	And Enter the Comments for gift
 	And Click save to save the gift 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -356,11 +378,12 @@ Scenario: To check whether the Gift is able to Hold
 @HoldGift
 Scenario: Log out the user
 	And log out	
-	
+	And close window
 	
 @Gift	
 @TransferGift
 Scenario: To check whether the Gift is able to Transfer
+And initiate web browser
 	And Enter username as "laceymontour@cmfi.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -375,6 +398,8 @@ Scenario: To check whether the Gift is able to Transfer
 	And Enter the Comments for gift
 	And Click save to save the gift 
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -399,10 +424,11 @@ Scenario: To check whether the Gift is able to Transfer
 @TransferGift
 Scenario: Log out the user
 	And log out		
-
+And close window
 @Gift	
 @GiftHistory
 Scenario: To check whether the Gift History is able to view
+And initiate web browser
 	And Enter username as "lynn.maringa@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit		
@@ -415,3 +441,4 @@ Scenario: To check whether the Gift History is able to view
 @GiftHistory
 Scenario: Log out the user
 	And log out	
+	And close window

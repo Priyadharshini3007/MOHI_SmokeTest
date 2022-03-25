@@ -2,6 +2,7 @@ Feature: To verify the Academic Term Entry Functionalities
 
 @AcademicTermEntry
 Scenario: To Verify the Academic Date Range Funtionality
+And initiate web browser 
 	And Enter username as "siteadmin" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -17,4 +18,5 @@ Scenario: To Verify the Academic Date Range Funtionality
 @AcademicTermEntry
 @logout
 Scenario: Log out the user
-And log out 
+And log out
+And close window 

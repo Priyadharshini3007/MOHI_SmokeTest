@@ -15,7 +15,7 @@ import com.cucumber.listener.ExtentProperties;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags 	 = "@SmokeTestNavi",
+		tags 	 = "@studententry",
 		plugin	 = {"com.cucumber.listener.ExtentCucumberFormatter:output/report.html"},
         glue 	 = "com.automation.steps",
         dryRun 	 = false,
@@ -36,9 +36,11 @@ public class TestRunner {
     }
 }
 //@LPO,@Requisition,@procurement
+
 //@FeeFrequencyValidation,@PerFamily,@Gender,@Elder,@Fee
 
 //@menunavigation, @EmployeeRecruitment, @emplist,@payroll, @Reports, @CMFEdit, @SponsorUpload, @CMFNumberUpload, @staffprofile, @StaffAge, @adduser, @FamilyVisit_TransferStudentSocialworkerassignment, @EmailTemplateAdd, @MasterDetailEntry, @AddNewMenu, @AddPrevilege, @Bookassignment
 
-//@ct,@examentry,@invigilatorassignment,@examresults, @FamilyVisit, @fast,@specialattendanceuploads , @specialattendance, @AttendanceProcess, @pulloutprocess ,@staffpromotionreport , @readmissionprocess, @Promotion&Transfer
+//@ct,@examentry,@invigilatorassignment,@examresults, @FamilyVisit, @fast,@specialattendanceuploads , @specialattendance, @AttendanceProcess, @pulloutprocess ,@staffpromotionreport , @readmissionprocess, @Promotion&Transfer 
+
 //@studententry,@sendforclarification,@SendForClarificationToSW,@Denied,@AnnualPhotoSchedule,@StudentDeleteSendForClarificationAndApprovalFeature,@StudentDeleteDeniedFeature,@StudentDisableFeature,@StudentDataBulkUpload

@@ -4,6 +4,7 @@ Feature: To verify inventory report
 @InventoryReport
 @AddItemType
  Scenario: Verification of adding new item type 
+ And initiate web browser 
 	And Enter username as "daniel.mwangi@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit

@@ -4,6 +4,7 @@ Feature: This is Center Based Requisition Creation and Approval feature
 @CenterBasedRequisition
 @CenterBasedRequisitionCreationAndApproval
  Scenario: This is Center Based Requisition Creation and Approval scenario
+ And initiate web browser
 	Given user is on login page
 	And Enter username "AdminAssistant" And click submit 
 	And Enter security answer And click submit 
@@ -21,11 +22,13 @@ Feature: This is Center Based Requisition Creation and Approval feature
 @CenterBasedRequisitionCreationAndApproval
  Scenario: Log out the user
  And log out
+ And close window
  
 @Requisition
 @CenterBasedRequisition
 @CenterBasedRequisitionCEOsendforclarification 
  Scenario: This is CEO sendforclarification scenario 
+ And initiate web browser
 	Given user is on login page 
 	And Enter username "AdminAssistant" And click submit 
 	And Enter security answer And click submit 
@@ -39,21 +42,29 @@ Feature: This is Center Based Requisition Creation and Approval feature
 	And Enter password And click submit
 	And Click the requisition waiting for "centre" approval alert and approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username "educationcoordinator" And click submit 
 	And Enter security answer And click submit 
 	And Enter password And click submit
 	And Click the requisition waiting for "centre" approval alert and approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username "educationmanager" And click submit 
 	And Enter security answer And click submit 
 	And Enter password And click submit
 	And Click the requisition waiting for "centre" approval alert and approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username "director" And click submit 
 	And Enter security answer And click submit 
 	And Enter password And click submit
 	And Click the requisition waiting for "centre" approval alert and approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username "CEO" And click submit 
 	And Enter security answer And click submit 
 	And Enter password And click submit 
@@ -66,11 +77,13 @@ Feature: This is Center Based Requisition Creation and Approval feature
 @CenterBasedRequisitionCEOsendforclarification
  Scenario: Log out the user
  And log out
+ And close window
  
 @Requisition
 @CenterBasedRequisition
 @CenterBasedRequisitionDenied
  Scenario: This is CenterBasedRequisition CEO Deniedscenario 
+ And initiate web browser
 	Given user is on login page 
 	And Enter username "AdminAssistant" And click submit 
 	And Enter security answer And click submit 
@@ -84,21 +97,29 @@ Feature: This is Center Based Requisition Creation and Approval feature
 	And Enter password And click submit
 	And Click the requisition waiting for "centre" approval alert and approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username "educationcoordinator" And click submit 
 	And Enter security answer And click submit 
 	And Enter password And click submit
 	And Click the requisition waiting for "centre" approval alert and approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username "educationmanager" And click submit 
 	And Enter security answer And click submit 
 	And Enter password And click submit
 	And Click the requisition waiting for "centre" approval alert and approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username "director" And click submit 
 	And Enter security answer And click submit 
 	And Enter password And click submit
 	And Click the requisition waiting for "centre" approval alert and approve
 	And log out
+	And close window
+	And initiate web browser
 	And Enter username "CEO" And click submit 
 	And Enter security answer And click submit 
 	And Enter password And click submit 
@@ -111,3 +132,4 @@ Feature: This is Center Based Requisition Creation and Approval feature
 @CenterBasedRequisitionDenied
 Scenario: Log out the user
  And log out
+ And close window

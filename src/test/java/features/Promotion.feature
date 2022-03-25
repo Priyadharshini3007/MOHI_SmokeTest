@@ -2,6 +2,7 @@ Feature: To Verify the Promotion Transfer
 @Promotion&Transfer
 @InSchoolPromotion
      Scenario Outline: Test Case 10432: Ensure the In-school Promotion process
+     And initiate web browser
  	And Enter username as "josk.st@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -14,6 +15,8 @@ Feature: To Verify the Promotion Transfer
     And Submit the student for approval
     Then Verify the user intimation after submission
     And log out
+    And close window 
+    And initiate web browser
     And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -22,6 +25,8 @@ Feature: To Verify the Promotion Transfer
 	And Pass the student class value "<PromotionType>"
 	And get the text from the selected class and center
 	And log out
+	And close window 
+	And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -40,10 +45,12 @@ Examples:
 @InSchoolPromotion
  Scenario: Log out
   	And log out
+  	And close window 
 
 @Promotion&Transfer
 @SectionChange
  Scenario Outline: Test Case 10433: Ensure the section change process
+ And initiate web browser
  	 And Enter username as "josk.st@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -56,6 +63,8 @@ Examples:
     And Submit the student for approval
     Then Verify the user intimation after submission
     And log out
+    And close window 
+    And initiate web browser
  	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -72,10 +81,12 @@ Examples:
 @SectionChange
  Scenario: Log out
   	And log out
+  	And close window 
 
 #@Promotion&Transfer
 @Detainment
  Scenario Outline: Test Case 10434: Ensure the detainment process
+ And initiate web browser
  	And Enter username as "josk.st@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -88,6 +99,8 @@ Examples:
     And Submit the student for approval
     Then Verify the user intimation after submission
     And log out
+    And close window 
+    And initiate web browser
     And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -96,6 +109,8 @@ Examples:
 	And Pass the student class value "<PromotionType>"
 	And get the text from the selected class and center
 	And log out
+	And close window 
+	And initiate web browser
  	And Enter username as "josk.ht@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -114,10 +129,12 @@ Examples:
 @Detainment
  Scenario: Log out
   	And log out
+  	And close window 
 
 @Promotion&Transfer  	
 @Transfer
 Scenario Outline: Test Case 10435: Ensure the transfer process is working properly
+And initiate web browser
 	And Enter username as "bond.sw1@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -129,6 +146,8 @@ Scenario Outline: Test Case 10435: Ensure the transfer process is working proper
     And Submit the student for approval
     Then Verify the user intimation after submission
     And log out
+    And close window 
+    And initiate web browser
  	And Enter username as "bond.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -138,6 +157,8 @@ Scenario Outline: Test Case 10435: Ensure the transfer process is working proper
   	And Choose the headteacher
     And Click approve and send to Next page
     And log out
+    And close window 
+    And initiate web browser
 	And Enter username as "josk.ht@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -149,6 +170,8 @@ Scenario Outline: Test Case 10435: Ensure the transfer process is working proper
     And Click approve and send to Next page
     Then Verify the class details after "<PromotionType>" process is approved
     And log out
+    And close window 
+    And initiate web browser
     And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -166,10 +189,12 @@ Examples:
 @Transfer
  Scenario: Log out
   	And log out
+  	And close window 
   	
 @Promotion&Transfer
 @HighSchoolPromotion
  Scenario Outline: Test Case 17039: Ensure the high school Promotion process
+ And initiate web browser
  	And Enter username as "josk.st@mohiafrica.org" And click submit
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -182,6 +207,8 @@ Examples:
     And Submit the student for approval
     Then Verify the user intimation after submission
     And log out
+    And close window 
+    And initiate web browser
     And Enter username as "siteadmin" And click submit
     And Enter security answer as "k" And click submit
     And Enter password as "Password#123" And click submit
@@ -190,6 +217,8 @@ Examples:
 	And Pass the student class value "<PromotionType>"
 	And get the text from the selected class and center
 	And log out
+	And close window 
+	And initiate web browser
  	And Enter username as "josk.ht@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit
 	And Enter password as "Password#123" And click submit
@@ -204,7 +233,8 @@ Examples:
 |PromotionType			|
 |HighSchoolPromotion	|
 
-#@Promotion&Transfer
-#@HighSchoolPromotion
-# Scenario: Log out
-#  	And log out
+@Promotion&Transfer
+@HighSchoolPromotion
+ Scenario: Log out
+  	And log out
+And close window 

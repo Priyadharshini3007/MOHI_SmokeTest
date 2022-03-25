@@ -7,6 +7,8 @@ Scenario Outline: To verify the message approval process
   Then search the student "<cmforstudent>"
   And add the message for the selected student
   And log out
+  And close window
+  And initiate web browser 
   Given user is on login page
   And Enter username as "AndriaMoushon@cmfi.org" And click submit 
   And Enter security answer as "k" And click submit 
@@ -22,7 +24,7 @@ Scenario Outline: To verify the message approval process
   And switch the label of the message
   Then click on the print icon
   And log out
-  
+  And close window
   
   Examples:
   |cmforstudent|
@@ -35,6 +37,8 @@ Scenario Outline: To verify the message approval process
   Then search the student "<cmforstudent>"
   And add the message for the selected student
   And log out
+  And close window
+    And initiate web browser 
   Given user is on login page
   And Enter username as "AndriaMoushon@cmfi.org" And click submit 
   And Enter security answer as "k" And click submit 
@@ -48,6 +52,7 @@ Scenario Outline: To verify the message approval process
   
    @MessageapprovalProcessSponsortosocialworker
   Scenario Outline: To verify the message from sponsor to social worker
+  And initiate web browser 
   Given user is on login page
   And Enter username as "AndriaMoushon@cmfi.org" And click submit 
   And Enter security answer as "k" And click submit 
@@ -56,12 +61,15 @@ Scenario Outline: To verify the message approval process
   Then search the student "<cmforstudent>"
   And add the message for the selected student
   And log out
+  And close window
+  And initiate web browser 
   And Enter username as "josk.sw1@mohiafrica.org" And click submit 
   And Enter security answer as "k" And click submit 
   And Enter password as "Password#123" And click submit
   Then select the student from dashboard
   And edit the message and approve
   And log out
+  And close window
   
   
   Examples:

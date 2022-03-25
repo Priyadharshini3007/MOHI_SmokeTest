@@ -1,6 +1,7 @@
 Feature: This is the CMF numbers upload feature 
 @CMFNumberUpload
 Scenario: This is CSC login scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "CSCUsername" And click submit 
 	And Enter security answer And click submit 
@@ -13,3 +14,4 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window

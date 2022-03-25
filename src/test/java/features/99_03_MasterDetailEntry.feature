@@ -2,6 +2,7 @@ Feature: This is the Master Detail Entry feature
 @MasterDetailEntry
 @AddMasterDetailEntry
 Scenario: 11396_This is Master Detail Entry Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -14,6 +15,7 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window
 
 
 
@@ -21,6 +23,7 @@ And log out
 @MasterDetailEntry
 @verifyCategoryDropDown
 Scenario: 14352_To verify the Category dropdown in MasterDetail Entry Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -32,10 +35,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
+And close window
 
 @MasterDetailEntry
 @verifyTextboxes
 Scenario: 14353_This is Verification of textboxes in MasterDetail Entry Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -47,11 +52,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 @MasterDetailEntry
 @VerifySectionMapping
 Scenario: 14354_This is Verification of Newly Added Section Mapped To The Appropriate Center&Class Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -66,11 +72,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 @MasterDetailEntry
 @VerifyReturnToList
 Scenario: 14367_This is Master Detail entry Return To List Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -86,7 +93,7 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window
 
 
 

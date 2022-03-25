@@ -1,7 +1,7 @@
-Feature: This is the family visit feature
-@FamilyVisit
+Feature: This is the family visit feature 
+@FamilyVisit 
 Scenario: This is FamilyVisit scenario 
-
+	And initiate web browser 
 	And Enter username as "josk.sw1@mohiafrica.org" And click submit 
 	And Enter security answer as "k" And click submit 
 	And Enter password as "Password#123" And click submit 
@@ -18,3 +18,4 @@ Scenario: This is FamilyVisit scenario
 @logout 
 Scenario: Log out the user 
 	And log out 
+	And close window 

@@ -1,6 +1,8 @@
 Feature: To verify Admin Menu navigations 
 
 @SmokeTestNavi 
+@menunavigation 
+@AdminMenunavigation 
 Scenario: Verification of User menu navigation 
 	And initiate web browser 
 	And Enter username as "siteadmin" And click submit 
@@ -26,9 +28,16 @@ Scenario: Verification of User menu navigation
 	And click Master Detail Entry sub menu 
 	When Select Admin menu 
 	And click Notification Entry sub menu 
-	And log out
 	
 @SmokeTestNavi 
+@menunavigation 
+Scenario: Log out the user 
+	And log out 
+	And close window 
+	
+@SmokeTestNavi 
+@menunavigation 
+@Book&leavemenunavigation 
 Scenario: To verify Book & Leave Menu navigations 
 	And initiate web browser 
 	And Enter username as "siteadmin" And click submit 
@@ -40,9 +49,17 @@ Scenario: To verify Book & Leave Menu navigations
 	And click My Dashboard sub menu 
 	When Select Leave menu 
 	And click Holidays sub menu 
-	And log out	
 	
-@SmokeTestNavi  
+@SmokeTestNavi 
+@menunavigation 
+Scenario: Log out the user 
+	And log out 
+	And close window 
+	
+	
+@SmokeTestNavi 
+@menunavigation 
+@centremenu 
 Scenario: To verify center menu navigations 
 	And initiate web browser 
 	And Enter username as "siteadmin" And click submit 
@@ -54,9 +71,16 @@ Scenario: To verify center menu navigations
 	And click Annual Photo Schedule sub menu 
 	When Select center menu 
 	And click Family Social Worker Assignment sub menu 
-	And log out 
 	
-@SmokeTestNavi  
+@SmokeTestNavi 
+@menunavigation 
+Scenario: Log out the user 
+	And log out 
+	And close window 
+	
+@SmokeTestNavi 
+@menunavigation 
+@exammenunavigation 
 Scenario: To verify exam menu navigations 
 	And initiate web browser 
 	And Enter username as "siteadmin" And click submit 
@@ -70,9 +94,16 @@ Scenario: To verify exam menu navigations
 	And click Invigilation Entry sub menu 
 	When Select exam menu 
 	And click Subject Grading Entry sub menu 
-	And log out
 	
-@SmokeTestNavi  
+@SmokeTestNavi 
+@menunavigation 
+Scenario: Log out the user 
+	And log out 
+	And close window 
+	
+@SmokeTestNavi 
+@menunavigation 
+@employeemenunavigation 
 Scenario: To verify employee menu navigations 
 	And initiate web browser 
 	And Enter username as "siteadmin" And click submit 
@@ -87,10 +118,17 @@ Scenario: To verify employee menu navigations
 	When Select employee menu 
 	And click staff promotion report sub menu 
 	When Select employee menu 
-	And Click Employee Leave Report submenu  
-	And log out 
+	And Click Employee Leave Report submenu 
 	
-@SmokeTestNavi
+@SmokeTestNavi 
+@menunavigation 
+Scenario: Log out the user 
+	And log out 
+	And close window 
+	
+@SmokeTestNavi 
+@menunavigation 
+@fastmenunavigation 
 Scenario: To verify FAST Menu navigations 
 	And initiate web browser 
 	And Enter username as "siteadmin" And click submit 
@@ -108,7 +146,12 @@ Scenario: To verify FAST Menu navigations
 	And click Assessment Chart sub menu 
 	When Select FAST menu 
 	And click Fast Activity Report sub menu 
-	And log out
+	
+@SmokeTestNavi 
+@menunavigation 
+Scenario: Log out the user 
+	And log out 
+	And close window 
 	
 @menunavigation 
 @myalertsnavigation 
@@ -220,7 +263,9 @@ Scenario: Log out the user
 	And log out 
 	And close window 
 	
-@SmokeTestNavi
+@SmokeTestNavi 
+@menunavigation 
+@payrollmenunavigation 
 Scenario: To verify payroll menu navigations 
 	And initiate web browser 
 	And Enter username as "siteadmin" And click submit 
@@ -252,7 +297,12 @@ Scenario: To verify payroll menu navigations
 	And Click Net Pay & Gross Pay Report submenu 
 	When Select Payroll menu 
 	And Click Summary Report by Designation submenu 
-	And log out
+	
+@SmokeTestNavi 
+@menunavigation 
+Scenario: Log out the user 
+	And log out 
+	And close window 
 	
 @menunavigation 
 @reportsnavigation 
@@ -321,7 +371,9 @@ Scenario: Log out the user
 	And log out 
 	And close window 
 	
-@SmokeTestNavi
+@SmokeTestNavi 
+@menunavigation 
+@procurementmenunavigation 
 Scenario: To verify procurement menu navigations 
 	And initiate web browser 
 	And Enter username as "siteadmin" And click submit 
@@ -349,10 +401,16 @@ Scenario: To verify procurement menu navigations
 	And Click LPO Payment Report submenu 
 	When Select procurement menu 
 	And Click LPO Requisition Summary Report submenu 
+	
+@SmokeTestNavi 
+@menunavigation 
+Scenario: Log out the user 
 	And log out 
 	And close window 
 	
-@SmokeTestNavi  
+@SmokeTestNavi 
+@menunavigation 
+@promotionmenunavigation 
 Scenario: To verify Promotion Menu navigations 
 	And initiate web browser 
 	And Enter username as "siteadmin" And click submit 
@@ -362,10 +420,17 @@ Scenario: To verify Promotion Menu navigations
 	And click In-SchoolPromotion sub menu 
 	When Select Promotion menu 
 	And click Transfer & Promotional Transfer sub menu 
-	And log out
+	
+@SmokeTestNavi 
+@menunavigation 
+Scenario: Log out the user 
+	And log out 
+	And close window 
 	
 	
 @SmokeTestNavi 
+@menunavigation 
+@sponsorshipmenu 
 Scenario: To verify Sponsorship Menu navigations 
 	And initiate web browser 
 	And Enter username as "siteadmin" And click submit 
@@ -381,9 +446,16 @@ Scenario: To verify Sponsorship Menu navigations
 	And Click Dashboard submenu 
 	When Select Sponsorship menu 
 	And Click Sponsor List submenu 
-	And log out
 	
-@SmokeTestNavi
+@SmokeTestNavi 
+@menunavigation 
+Scenario: Log out the user 
+	And log out 
+	And close window 
+	
+@SmokeTestNavi 
+@menunavigation 
+@Staffprofilemenu 
 Scenario: To verify Staff Profile Menu navigations 
 	And initiate web browser 
 	And Enter username as "julius.mwangi@mohiafrica.org" And click submit 
@@ -395,10 +467,16 @@ Scenario: To verify Staff Profile Menu navigations
 	And click Pay Structure Details sub menu 
 	When Select Staff Profile menu 
 	And click Pay Slip Details sub menu 
+	
+@SmokeTestNavi 
+@menunavigation 
+Scenario: Log out the user 
 	And log out 
 	And close window 
 	
-@SmokeTestNavi
+@SmokeTestNavi 
+@menunavigation 
+@Studentsmenunavigation 
 Scenario: To verify student menu navigations 
 	And initiate web browser 
 	And Enter username as "siteadmin" And click submit 
@@ -434,9 +512,16 @@ Scenario: To verify student menu navigations
 	And click Fee Master Entry submenu 
 	When Select student menu 
 	And click Academic Term Entry submenu 
-	And log out 
 	
 @SmokeTestNavi 
+@menunavigation 
+Scenario: Log out the user 
+	And log out 
+	And close window 
+	
+@SmokeTestNavi 
+@menunavigation 
+@reportsmenunavigation 
 Scenario: To verify Reports menu navigations 
 	And initiate web browser 
 	And Enter username as "siteadmin" And click submit 
@@ -479,6 +564,11 @@ Scenario: To verify Reports menu navigations
 	When Select Reports menu 
 	And Click Message status report submenu 
 	When Select Reports menu 
-	And Click Message conversation Report submenu  
+	And Click Message conversation Report submenu 
+	
+@SmokeTestNavi 
+@menunavigation 
+Scenario: Log out the user 
 	And log out 
+	And close window 
 	

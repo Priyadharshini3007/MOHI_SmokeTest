@@ -1,6 +1,7 @@
 Feature: This is the Organization feature 
 @AddOrganization
 Scenario: This is Add Organization Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -14,10 +15,11 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out
-
+And close window 
 
 @EditOrganization
 Scenario: This is Edit Organization Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -30,10 +32,11 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window 
 
 @AssignRoleToOrganization
 Scenario: This is Assign Role to Organization Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -47,10 +50,11 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window 
 
 @OrganizationListCanBeViewed
 Scenario: This is to view Organization list Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -64,11 +68,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window 
 
 
 @OrganizationSort
 Scenario: This is to verify Organization Hierarchy and Designation Tab  Sort Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -80,13 +85,16 @@ Given user is on login page
 
 	
 
-#@OrganizationSort
-#@logout
-#Scenario: Log out the user
-#And log out	
+@OrganizationSort
+@logout
+Scenario: Log out the user
+And log out	
+And close window 
+
 
 @OrganizationSearch
 Scenario: This is to verify Organization Search Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -100,15 +108,16 @@ Given user is on login page
 
 	
 
-#@OrganizationSearch
-#@logout
-#Scenario: Log out the user
-#And log out		
-
+@OrganizationSearch
+@logout
+Scenario: Log out the user
+And log out		
+And close window 
 
 
 @AddOrganizationHierarchy
 Scenario: This is to Add organization Hierarchy Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -124,11 +133,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window 
 
 
 @OrganizationHierarchyListCanBeViewed
 Scenario: This is to view Organization Hierarchy list Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -143,9 +153,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out	
+And close window 
+
 
 @EditOrganizationHierarchy
 Scenario: This is to Edit Organization Hierarchy Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -160,10 +173,11 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window 
 
 @DeleteOrganizationHierarchy
 Scenario: This is to Delete Organization Hierarchy Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -178,9 +192,12 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out	
+And close window 
+
 
 @AddDesignation
 Scenario: This is to Add designation Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -196,12 +213,13 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out	
-
+And close window 
 
 
 
 @DeleteRoleMappedToOrganization
 Scenario: This is to Delete the role mapped to Organization Scenario
+And initiate web browser
 Given user is on login page
 	And Enter username "siteadmin" And click submit 
 	And Enter security answer And click submit 
@@ -214,3 +232,4 @@ Given user is on login page
 @logout
 Scenario: Log out the user
 And log out	
+And close window 

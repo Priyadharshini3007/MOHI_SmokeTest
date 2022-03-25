@@ -3,6 +3,7 @@ Feature: To verify the Book Assignment Functionalities
 
 @Bookassignment 
 Scenario Outline: To  check whether the Book assignment functionality
+And initiate web browser
     Given user is on login page
     And Enter username as "josk.st@mohiafrica.org" And click submit 
     And Enter security answer as "k" And click submit 
@@ -25,3 +26,7 @@ Scenario Outline: To  check whether the Book assignment functionality
 @Bookassignment
   Scenario: Log out scenario
   And log out
+And close window
+  
+  
+  
